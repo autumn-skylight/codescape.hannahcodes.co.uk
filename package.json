@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "description": "A devloper foucused app",
   "main": "main.js",
-  "engines": {
-    "node": ">=20.3.0"
-  },
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
