@@ -23,7 +23,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][https://github.com/autumn-skylight/codescape-app/issues]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![LinkedIn][linkedin-shield]][linkedin-url] 
 
 
 
@@ -46,7 +46,7 @@
     ·
     <a href="">download stable (coming soon)</a>
     ·
-    <a href="https://github.com/autumn-skylight/codescape-app/issues">Request bugs/Feature</a>
+    <a href="https://github.com/autumn-skylight/codescape-app/issues">Request Feature / report bugs</a>
     .
     <a href="https://github.com/users/autumn-skylight/projects/1">view project timeline</a>
   </p>
@@ -76,7 +76,6 @@
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -85,17 +84,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 <img src="/assets/images/codescape.png" alt="preview" width="" height="">
-
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -115,15 +103,12 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### download sorce code and required files. 
 
  
 * npm
   ```sh
-  npm install npm@latest -g
+  ...
   ```
 
 ### download app
@@ -152,9 +137,7 @@ or see the [open project](https://github.com/users/autumn-skylight/projects/1) f
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue for new features with the tag "enhancement" or if its a bug then open with the tag "bug".
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
@@ -178,19 +161,9 @@ Don't forget to give the project a star! Thanks again!
 <!-- CONTACT -->
 ## Contact
 
-hannah - []() - email@example.com
-
 Project Link: [https://github.com/autumn-skylight/codescape-app](https://github.com/autumn-skylight/codescape-app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
