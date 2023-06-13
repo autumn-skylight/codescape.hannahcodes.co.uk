@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/autumn-skylight/codescape-app">
-    <img src="/assets/images/codescape-logo.png" alt="Logo" width="80" height="80">
+    <img src="/assets/images/codescape-logo.png" alt="Logo" width="120" height="120">
   </a>
 
   <h3 align="center">Codescape</h3>
