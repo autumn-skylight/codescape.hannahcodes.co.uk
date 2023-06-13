@@ -1,14 +1,17 @@
 {
   "name": "codescape",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "version": "0.1.0",
+  "description": "A devloper foucused app",
   "main": "main.js",
+  "engines": {
+    "node": ">=20.3.0<21"
+  },
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/autumn-skylight/codescape-app",
   "keywords": [
     "Electron",
     "quick",
@@ -16,8 +19,7 @@
     "tutorial",
     "demo"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "codescape",
   "devDependencies": {
     "@electron-forge/cli": "^6.1.1",
     "@electron-forge/maker-deb": "^6.1.1",
