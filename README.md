@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/autumn-skylight/codescape-app">
-    <img src="/assets/images/codescape-logo.png" alt="Logo" width="120" height="120">
+    <img src="/assets/images/codescape-logo.png" alt="Logo" width="300" height="300">
   </a>
 
   <h3 align="center">Codescape</h3>
@@ -83,8 +83,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![hello][product-screenshdot]](https://dev.hannahcodes.co.uk/assets/images/codescape.png)
-<img src="https://dev.hannahcodes.co.uk/assets/images/codescape.png" alt="preview" width="" height="">
+[![hello][product-screenshdot]](https://dev.hannahcodes.co.uk/assets/images/projects/codescape.png)
 
 There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
