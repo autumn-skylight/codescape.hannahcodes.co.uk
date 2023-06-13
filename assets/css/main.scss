@@ -239,6 +239,19 @@ h1{
     }
   }
 }
+.mh1 {
+  margin: auto;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  text-align: center;
+  align-self: center;
+  color: var(--light-nav-text-colour);
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--nav-text-colour);
+  }
+}
+
 .project_band {
   width: 85%;
   max-width: 1500px;
