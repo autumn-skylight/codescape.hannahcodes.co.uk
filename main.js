@@ -5,8 +5,8 @@ function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
     icon: path.join(__dirname, "./assets/images/codescape-logo.ico"),
-    width: 1900,
-    height: 1060,
+    width: 1920,
+    height: 1080,
     titleBarStyle: 'hidden',
     titleBarOverlay: {
       color: 'rgb(42, 44, 44)',
