@@ -42,11 +42,13 @@
     <a href="https://github.com/autumn-skylight/codescape-app"><strong>Explore the repo »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="">download beta (coming soon)</a>
     ·
-    <a href="https://github.com/autumn-skylight/codescape-app/issues">Report Bug</a>
+    <a href="">download stable (coming soon)</a>
     ·
-    <a href="https://github.com/autumn-skylight/codescape-app/issues">Request Feature</a>
+    <a href="https://github.com/autumn-skylight/codescape-app/issues">Request bugs/Feature</a>
+    .
+    <a href="https://github.com/users/autumn-skylight/projects/1">view project timeline</a>
   </p>
 </div>
 
@@ -118,7 +120,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### download sorce code and required files. 
 
-This is an example of how to list things you need to use the software and how to install them.
+ 
 * npm
   ```sh
   npm install npm@latest -g
