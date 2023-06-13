@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 :root {
   /*light mode colours*/
   --light-hamburger-icon-colour: black;
