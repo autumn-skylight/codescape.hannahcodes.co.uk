@@ -11,12 +11,12 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-<!--[![Contributors][contributors-shield]][https://github.com/autumn-skylight/codescape-app/graphs/contributors]
+[![Contributors][contributors-shield]][https://github.com/autumn-skylight/codescape-app/graphs/contributors]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][https://github.com/autumn-skylight/codescape-app/issues]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url] --!>
+[![LinkedIn][linkedin-shield]][linkedin-url] 
 
 
 
@@ -58,13 +58,12 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <!-- <a href="#getting-started">Getting Started</a> -->
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#download app">downlaod app</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+   <!-- <li><a href="#usage">Usage</a></li> -->
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -161,3 +160,10 @@ Project Link: [https://github.com/autumn-skylight/codescape-app](https://github.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[docker-url]: https://www.docker.com/
+[docker-shield]: https://img.shields.io/badge/docker-23.x-2496ED?style=for-the-badge&logo=docker
