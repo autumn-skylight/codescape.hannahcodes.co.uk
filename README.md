@@ -12,7 +12,7 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/github/autumn-skylight/autumn-skylight/codescape-app?color=ee8449&style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/github/autumn-skylight/codescape-app?color=ee8449&style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 [![Contributors][contributors-shield]][https://github.com/autumn-skylight/codescape-app/graphs/contributors]
 [![Forks][forks-shield]][forks-url]
