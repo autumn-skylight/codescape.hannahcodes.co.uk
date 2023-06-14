@@ -91,7 +91,7 @@
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+codescsape is built using the stable version of node.js (20.3.0) and electron.js (25.1.0)
 
 * [node.js](https://nodejs.org/en)
 * [electron.js](https://www.electronjs.org/)
