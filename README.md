@@ -17,7 +17,7 @@
 [![Issues][issues-shield]][https://github.com/autumn-skylight/codescape-app/issues]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url] 
-[![mainteance][maintenace-shield]][]
+[![maintence][maintence-shield]][]
 
 
 
