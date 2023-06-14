@@ -15,7 +15,6 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![checks][checks-shield]][checks-url]
 [![release][release-shield]][release-url]
 
 
@@ -179,7 +178,5 @@ Project Link: [https://github.com/autumn-skylight/codescape-app](https://github.
 [stars-shield]: https://img.shields.io/github/stars/autumn-skylight/codescape-app?color=%23&style=for-the-badge
 [contributors-url]: https://github.com/autumn-skylight/codescape-app/graphs/contributors
 [contributors-shield]: https://img.shields.io/github/contributors/autumn-skylight/codescape-app?color=%23&style=for-the-badge
-[checks-url]:https://github.com/autumn-skylight/codescape-app
-[checks-shield]: https://img.shields.io/github/checks-status/autumn-skylight/codescape-app/dev?style=for-the-badge
 [release-url]:https://github.com/autumn-skylight/codescape-app
 [release-shield]: https://img.shields.io/github/v/release/autumn-skylight/codescape-app?style=for-the-badge
