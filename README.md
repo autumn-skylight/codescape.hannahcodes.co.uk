@@ -17,7 +17,6 @@
 [![Issues][issues-shield]][https://github.com/autumn-skylight/codescape-app/issues]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url] 
-[![maintence][maintence-shield]][]
 
 
 
@@ -164,4 +163,4 @@ Project Link: [https://github.com/autumn-skylight/codescape-app](https://github.
 
 
 [docker-url]: https://www.docker.com/
-[maintence-shield]: https://img.shields.io/maintenance/yes/2023?style=for-the-badge
+[issue-shield]: https://img.shields.io/github/issues/autumn-skylight/codescape-app?color=%2303ac1&style=for-the-badge
