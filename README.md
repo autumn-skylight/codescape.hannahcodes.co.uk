@@ -163,4 +163,4 @@ Project Link: [https://github.com/autumn-skylight/codescape-app](https://github.
 
 
 [docker-url]: https://www.docker.com/
-[issue-shield]: https://img.shields.io/github/issues/autumn-skylight/codescape-app?color=%2303ac1&style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/autumn-skylight/codescape-app?color=%2303ac1&style=for-the-badge
