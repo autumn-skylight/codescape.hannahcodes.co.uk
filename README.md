@@ -18,12 +18,12 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][https://github.com/autumn-skylight/codescape-app/graphs/contributors]
+<!--[![Contributors][contributors-shield]][https://github.com/autumn-skylight/codescape-app/graphs/contributors]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][https://github.com/autumn-skylight/codescape-app/issues]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url] 
+[![LinkedIn][linkedin-shield]][linkedin-url] --!>
 
 
 
@@ -100,7 +100,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 
 
-<!-- GETTING STARTED -->
+<!-- GETTING STARTED 
 ## Getting Started
 
 ### download sorce code and required files. 
@@ -110,18 +110,18 @@ This section should list any major frameworks/libraries used to bootstrap your p
   ```sh
   ...
   ```
-
+-->
 ### download app
 
 vist the download link to either download the beta or stable version (links coming soon)
 or you can download from github itself on the right hand side (download avalible soon)
 
-<!-- USAGE EXAMPLES -->
+<!-- USAGE EXAMPLES 
 ## Usage
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+-->
 
 
 <!-- ROADMAP -->
@@ -150,12 +150,12 @@ Don't forget to give the project a star! Thanks again!
 
 
 
-<!-- LICENSE -->
+<!-- LICENSE 
 ## License
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+-->
 
 
 <!-- CONTACT -->
