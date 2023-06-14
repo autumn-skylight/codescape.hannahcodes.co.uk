@@ -89,7 +89,7 @@
 
 
 
-### Built With
+### Built using
 
 codescsape is built using the stable version of node.js (20.3.0) and electron.js (25.1.0)
 
