@@ -11,9 +11,9 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][https://github.com/autumn-skylight/codescape-app/graphs/contributors]
+<!--[![Contributors][contributors-shield]][https://github.com/autumn-skylight/codescape-app/graphs/contributors] -->
 [![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
+<!--[![Stargazers][stars-shield]][stars-url] -->
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url] 
@@ -164,3 +164,5 @@ Project Link: [https://github.com/autumn-skylight/codescape-app](https://github.
 
 [issues-url]: https://github.com/autumn-skylight/codescape-app/issues
 [issues-shield]: https://img.shields.io/github/issues/autumn-skylight/codescape-app?color=%2303ac1&style=for-the-badge
+[forks-url]: https://github.com/autumn-skylight/codescape-app
+[forks-shield]: https://img.shields.io/github/forks/autumn-skylight/codescape-app?color=%23&style=for-the-badge
