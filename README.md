@@ -11,9 +11,9 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-<!--[![Contributors][contributors-shield]][https://github.com/autumn-skylight/codescape-app/graphs/contributors] -->
+[![Contributors][contributors-shield]][https://github.com/autumn-skylight/codescape-app/graphs/contributors]
 [![Forks][forks-shield]][forks-url]
-<!--[![Stargazers][stars-shield]][stars-url] -->
+[![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url] 
@@ -138,6 +138,14 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -166,3 +174,5 @@ Project Link: [https://github.com/autumn-skylight/codescape-app](https://github.
 [issues-shield]: https://img.shields.io/github/issues/autumn-skylight/codescape-app?color=%2303ac1&style=for-the-badge
 [forks-url]: https://github.com/autumn-skylight/codescape-app
 [forks-shield]: https://img.shields.io/github/forks/autumn-skylight/codescape-app?color=%23&style=for-the-badge
+[stars-url]:https://github.com/autumn-skylight/codescape-app
+[stars-shield]:https://img.shields.io/github/stars/autumn-skylight/codescape-app?color=%23&style=for-the-badge
