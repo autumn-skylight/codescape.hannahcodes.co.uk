@@ -14,7 +14,7 @@
 [![Contributors][contributors-shield]][https://github.com/autumn-skylight/codescape-app/graphs/contributors]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][https://github.com/autumn-skylight/codescape-app/issues]
+[![Issues][issues-shield]][issuea-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url] 
 
@@ -162,5 +162,5 @@ Project Link: [https://github.com/autumn-skylight/codescape-app](https://github.
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 
-[docker-url]: https://www.docker.com/
+[issues-url]: https://github.com/autumn-skylight/codescape-app/issues
 [issues-shield]: https://img.shields.io/github/issues/autumn-skylight/codescape-app?color=%2303ac1&style=for-the-badge
