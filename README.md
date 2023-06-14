@@ -93,8 +93,8 @@
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![node][node.js]](https://nodejs.org/en)
-* [![electron][electron.js]](https://www.electronjs.org/)
+* [node.js](https://nodejs.org/en)
+* [electron.js](https://www.electronjs.org/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
