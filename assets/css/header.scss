@@ -71,7 +71,6 @@ header{
     display: block;
     transition: 0.3s;
     cursor: pointer;
-    position: relative;
     -webkit-app-region: no-drag;
     @media (prefers-color-scheme: dark) {
       color: var(--dark-nav-text-colour);
@@ -81,7 +80,6 @@ header{
   .sidenav a:hover, .dropdown-btn:hover {
     color: var(--light-hover-active-colour);
     font-weight: bold;
-    position: relative;
     @media (prefers-color-scheme: dark) {
       color: var(--dark-hover-active-colour);
     }
@@ -158,16 +156,7 @@ header{
   display: none;
   background-color: #262626;
   padding: 8px 8px 8px 32px;
-  position: absolute;
   width: 100%;
-}
-.dropdown-container_settings {
-  display: none; 
-  position: absolute;
-  background-color: #262626;
-  padding: 0;
-  margin: 0;
-  top: 2;
 }
 
 /* Optional: Style the caret down icon */
@@ -185,31 +174,59 @@ header{
 }
   .darkmode_button{
     padding-left: 1em;
-    position: relative;
     padding-right: 1em;
+    margin-right: 10em;
     align-items: center;
     padding: auto;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
     background-color: inherit;
   }
+  /* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  -webkit-app-region: no-drag;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  -webkit-app-region: no-drag;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+  -webkit-app-region: no-drag;
+}
+
   .darkmode_button_icon{
     padding-left: 1em;
     padding-right: 1em;
     align-items: center;
     padding: auto;
-    position: relative;
+    -webkit-app-region: no-drag;
+    cursor: pointer;
     background-color: inherit;
   }
   .darkmode_display{
     padding-top: 280%;
     max-height: 2em;
     display: flex;
-    position: relative;
     padding: auto;
   }
 .darkmode_svg{
   align-items: center;
   align-self: center;
-  position: relative;
   margin: auto;
 }
 
