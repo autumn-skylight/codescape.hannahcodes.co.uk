@@ -1,0 +1,128 @@
+:root {
+    color-scheme: light dark;
+    /*light mode colours*/
+
+    --light-card-bg-colour: white;
+    --light-card-title-span-colour: #333;
+    --light-card-box-shadow-colour: rgba(0, 0, 0, 0.2);
+    --light-card-box-shadow-hover-colour: #5c2246;
+
+    --light-hover-active-colour: #5c2246;
+    --light-nav-text-colour: black;
+    --light-svg-fill-colour: black;
+    --light-sorce-code-svg-fill-colour: #5a5c5e;
+    
+    --light-card-title-span-colour: #333;
+    --light-card-box-shadow-colour: rgba(0, 0, 0, 0.2);
+    --light-card-box-shadow-hover-colour: #5c2246;
+    --light-top-border-colour: #5c2246;
+    --light-project-discription-colour: #29292b;
+    /*dark mode colours*/
+  
+    --hover-active-colour: #f2c7e2;
+    --svg-fill-colour: #fff;
+    --sorce-code-svg-fill-colour: hsl(214, 7%, 47%);
+    --dark-card-bg-colour: #262626;
+    --card-title-span-colour: rgb(255, 251, 251);
+    --card-box-shadow-colour: rgba(139, 138, 138, 0.2);
+    --card-box-shadow-hover-colour: #f2c7e2;
+    --top-border-colour: #f2c7e2;
+    --footer-link-colour: dimgrey;
+    --blog-span-hr-colour: rgba(105, 105, 105, 0.26);
+    --project-discription-colour: #b5b8bd;
+  }
+
+
+.project_band {
+    width: 85%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    @media (min-width: 30em) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: 60em) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  .project_card {
+    background: var(--light-card-bg-colour);
+    text-decoration: none;
+    box-shadow: 0 2px 5px var(--light-card-box-shadow-colour);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    min-width: 100%;
+    position: relative;
+    top: 0;
+    transition: all 0.1s ease-in;
+    &:hover {
+      top: -2px;
+      box-shadow: 0 4px 5px var(--light-card-box-shadow-hover-colour);
+    }
+  
+    @media (prefers-color-scheme: dark) {
+      background: var(--dark-card-bg-colour);
+      text-decoration: none;
+      color: var(--nav-text-colour);
+      box-shadow: 0 2px 5px var(--card-box-shadow-colour);
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      position: relative;
+      top: 0;
+      transition: all 0.1s ease-in;
+      &:hover {
+        top: -2px;
+        box-shadow: 0 4px 5px var(--card-box-shadow-hover-colour);
+      }
+    }
+  }
+  article {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  h1 {
+    font-size: 18px;
+    margin: 0;
+    @media (prefers-color-scheme: dark) {
+      h1 {
+        font-size: 20px;
+        margin: 0;
+      }
+    }
+  }
+  .thumb {
+    padding-bottom: 60%;
+    min-height: 100%;
+    width: 100%;
+    background-size: cover;
+  }
+  .blog_page_thumb {
+    padding-bottom: 60%;
+    min-height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  @media (min-width: 60em) {
+  .item-1 {
+    grid-column: 1 / span 2;
+  }
+  .item-1 h1 {
+    font-size: 24px;
+  }
+  }
+  .project-link-flex {
+  display: flex;
+  max-width: 450px;
+  align-items: center;
+  margin: 0 auto;
+  }
