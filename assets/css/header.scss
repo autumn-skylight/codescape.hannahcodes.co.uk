@@ -183,32 +183,15 @@ header{
     background-color: inherit;
   }
   /* Style the search box inside the navigation bar */
-.topnav input[type=text] {
-  float: right;
-  padding: 6px;
+.search {
+  padding: 1em;
   border: none;
   -webkit-app-region: no-drag;
-  margin-top: 8px;
-  margin-right: 16px;
+  margin-top: 3em;
+  margin-left: .3em;
+  margin-right: .5em;
   font-size: 17px;
 }
-.topnav .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  -webkit-app-region: no-drag;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-
-.topnav .search-container button:hover {
-  background: #ccc;
-  -webkit-app-region: no-drag;
-}
-
   .darkmode_button_icon{
     padding-left: 1em;
     padding-right: 1em;
