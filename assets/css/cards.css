@@ -48,6 +48,30 @@
   }
 }
 
+.help_band {
+  width: 40%;
+  height: 100%;
+  max-width: 1500px;
+  margin: auto;
+  display: grid;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+@media (min-width: 30em) {
+  .help_band {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 60em) {
+  .help_band {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .project_card {
   background: var(--light-card-bg-colour);
   text-decoration: none;
@@ -103,18 +127,18 @@ h1 {
 }
 
 .thumb {
-  padding-bottom: 60%;
+  padding-bottom: 70%;
   min-height: 100%;
   width: 100%;
   background-size: cover;
 }
 
 .blog_page_thumb {
-  padding-bottom: 60%;
+  padding-bottom: 70%;
   min-height: 100%;
   width: 100%;
   background-size: cover;
-  background-position: center center;
+  background-position: top center;
 }
 
 @media (min-width: 60em) {
