@@ -163,6 +163,8 @@ h1 {
   margin: 0;
   background-color: inherit;
   font-weight: bold;
+  text-decoration: none;
+  text-align: center;
 }
 @media (prefers-color-scheme: dark) {
   .card_text h1 {
@@ -182,21 +184,6 @@ h1 {
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 13em; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-}
-
-/* The Modal (background) */
-.modal2 {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -244,17 +231,28 @@ h1 {
 }
 /* The Close Button */
 .close {
-  color: white;
+  color: black;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
+@media (prefers-color-scheme: dark) {
+  .close {
+    color: white;
+  }
+}
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: var(--light-hover-active-colour);
   text-decoration: none;
   cursor: pointer;
+}
+@media (prefers-color-scheme: dark) {
+  .close:hover,
+  .close:focus {
+    color: var(--dark-hover-active-colour);
+  }
 }
 
 .modal-header {
@@ -273,6 +271,14 @@ h1 {
 
 .modal-body {
   padding: 2px 16px;
+  background-color: #ededf1;
+  color: black;
+}
+@media (prefers-color-scheme: dark) {
+  .modal-body {
+    background-color: #1f1e1e;
+    color: rgb(196, 195, 195);
+  }
 }
 
 .modal-footer {
