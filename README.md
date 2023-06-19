@@ -75,7 +75,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-<img src="/assets/images/codescape.png" alt="preview" width="" height="">
+<img src="/assets/images/codescape.jpg" alt="preview" width="" height="">
 
 codescape is an all in one app for developers and designers, where users can showcase their latest project from design to finished written code 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
