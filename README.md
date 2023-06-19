@@ -24,7 +24,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/autumn-skylight/codescape-app">
-    <img src="/assets/images/codescape-logo.png" alt="Logo" width="300" height="300">
+    <img src="/assets/images/codescape-logo-dark.png" alt="Logo" width="300" height="300">
   </a>
 
   <h3 align="center">Codescape</h3>
