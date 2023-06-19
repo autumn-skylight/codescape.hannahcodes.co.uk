@@ -62,9 +62,9 @@
           <div class="help_band">
             <div class="item-5">
               <div class="project_card project_card_a">
-                <div class="blog_page_thumb" style="background-image: url(../../assets/images/uploading.jpg);"></div>
+                <div class="blog_page_thumb"  style="background-image: url(../../assets/images/uploading.jpg);"></div>
                 <article>
-                  <h1>uploading</h1>
+                  <button id="myBtn" class="card_text">uploading</button>
                 </article>
               </div>
             </div>
@@ -72,7 +72,7 @@
               <div class="project_card project_card_a">
                 <div class="thumb" style="background-image: url(../../assets/images/safety.jpg);"></div>
                 <article>
-                  <h1>safety</h1>
+                  <button id="myBtn" class="card_text">safety</button>
                 </article>
               </div>
             </div>
@@ -115,6 +115,79 @@
               </div>
             </div>
           </div>
+          <!-- Trigger/Open The Modal -->
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h1>uploading</h1>
+    </div>
+    <div class="modal-body">
+      <h2>what content is allowed?</h2>
+      <p>Some text in the Modal Body</p>
+
+      <h2>how can I upload?</h2>
+      <p>Some other text...</p>
+
+      <h2>Can I share Uploaded Content?</h2>
+      <p>Some other text...</p>
+
+      <h2>Someone else has uploaded my content what should I do?</h2>
+      <p>Some other text...</p>
+
+      <h2>How can I Delete files that I have just uploaded?</h2>
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-header">
+      <h1>safety</h1>
+    </div>
+    <div class="modal-body">
+      <h2>I don't feel safe on here what should I do</h2>
+      <p>Some text in the Modal Body</p>
+
+      <h2>how can I upload?</h2>
+      <p>Some other text...</p>
+
+      <h2>Can I share Uploaded Content?</h2>
+      <p>Some other text...</p>
+
+      <h2>Someone else has uploaded my content what should I do?</h2>
+      <p>Some other text...</p>
+
+      <h2>How can I Delete files that I have just uploaded?</h2>
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-header">
+      <h1>account</h1>
+    </div>
+    <div class="modal-body">
+      <h2>I want to sign up, how?</h2>
+      <p>Some text in the Modal Body</p>
+
+      <h2>how can I upload?</h2>
+      <p>Some other text...</p>
+
+      <h2>Can I share Uploaded Content?</h2>
+      <p>Some other text...</p>
+
+      <h2>Someone else has uploaded my content what should I do?</h2>
+      <p>Some other text...</p>
+
+      <h2>How can I Delete files that I have just uploaded?</h2>
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    
+  </div>
+  </div>
+
+</div>
   </section>
   
 <footer> <div class="footer_display">
@@ -132,4 +205,30 @@
 <script src="../../assets/js/nav.js"></script>
 <script src="../../assets/js/renderer.js"></script>
 <script src="../../assets/js/preload.js"></script>
+<script>// Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks the button, open the modal 
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }</script>
 </html>

@@ -6,6 +6,8 @@
     --light-card-title-span-colour: #333;
     --light-card-box-shadow-colour: rgba(0, 0, 0, 0.2);
     --light-card-box-shadow-hover-colour: #5c2246;
+    --light-modal-bg-colour: #ecf1f1;
+    --light-modal-boxshadow-colour: rgb(20, 20, 20, 0.151);
 
     --light-hover-active-colour: #5c2246;
     --light-nav-text-colour: black;
@@ -19,7 +21,7 @@
     --light-project-discription-colour: #29292b;
     /*dark mode colours*/
   
-    --hover-active-colour: #f2c7e2;
+    --dark-hover-active-colour: #f2c7e2;
     --svg-fill-colour: #fff;
     --sorce-code-svg-fill-colour: hsl(214, 7%, 47%);
     --dark-card-bg-colour: #262626;
@@ -145,3 +147,120 @@
   align-items: center;
   margin: 0 auto;
   }
+  .card_text {
+    font-size: 20px;
+    margin: 0;
+    background-color: inherit;
+    font-weight: bold;
+    @media (prefers-color-scheme: dark) {
+      h1 {
+        font-size: 20px;
+        margin: 0;
+      }
+    }
+  }
+  .card_text:hover{
+    color: var(--light-hover-active-colour);
+    @media (prefers-color-scheme: dark) {
+      color: var(--dark-hover-active-colour);
+    }
+
+  }
+ /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 13em; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* The Modal (background) */
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 13em; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #ededf1;
+  color: #000;
+  margin: auto;
+  padding: 0;
+  box-shadow: 5px 5px 5px var(--light-modal-boxshadow-colour);
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  @media (prefers-color-scheme: dark) {
+    box-shadow: 5px 5px 5px var(--dark-header-boxshadow-colour);
+  }
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #ecf1f1;
+  color: black;
+  text-align: center;
+  border-bottom: 1px solid #babbbb;
+  @media (prefers-color-scheme: dark) {
+    background-color: #2a2c2c;
+    color: white;
+  }
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #ecf1f1;
+  color: black;
+  border-top: .5px solid #babbbb;
+  @media (prefers-color-scheme: dark) {
+    background-color: #2a2c2c;
+    color: white;
+  }
+}
