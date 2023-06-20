@@ -31,8 +31,8 @@
 }
 
 .project_band {
-  width: 85%;
-  max-width: 1500px;
+  width: 60%;
+  max-width: 2000px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -133,6 +133,9 @@ h1 {
   min-height: 100%;
   width: 100%;
   background-size: cover;
+  align-items: center;
+  background-position: top left;
+  margin: auto;
 }
 
 .blog_page_thumb {
@@ -140,7 +143,19 @@ h1 {
   min-height: 100%;
   width: 100%;
   background-size: cover;
-  background-position: top center;
+  background-position: center left;
+  align-items: center;
+  margin: auto;
+}
+
+.card_thumb_2 {
+  padding-bottom: 70%;
+  min-height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  align-items: center;
+  margin: auto;
 }
 
 @media (min-width: 60em) {
@@ -180,21 +195,6 @@ h1 {
   .card_text:hover {
     color: var(--dark-hover-active-colour);
   }
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 13em; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -255,10 +255,26 @@ h1 {
   }
 }
 
+.modal-header-top {
+  padding: 2px 16px;
+  background-color: #ecf1f1;
+  color: black;
+  text-align: center;
+  box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.75);
+  border-bottom: 1px solid #babbbb;
+}
+@media (prefers-color-scheme: dark) {
+  .modal-header-top {
+    background-color: #2a2c2c;
+    color: white;
+  }
+}
+
 .modal-header {
   padding: 2px 16px;
   background-color: #ecf1f1;
   color: black;
+  margin-left: 0;
   text-align: center;
   border-bottom: 1px solid #babbbb;
 }
@@ -279,6 +295,15 @@ h1 {
     background-color: #1f1e1e;
     color: rgb(196, 195, 195);
   }
+}
+
+.modal-body h2 {
+  margin-left: 1em;
+}
+
+.modal-body p {
+  margin-left: 2em;
+  margin-right: 4em;
 }
 
 .modal-footer {

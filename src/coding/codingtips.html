@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/header.css">
+    <link rel="stylesheet" href="../../assets/css/img.css">
+    <link rel="stylesheet" href="../../assets/css/cards.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/b462bf7f1d.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <title>Codescape (preview)</title>
+</head>
+<body>
+  <header> 
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="../index.html">home</a>
+        <a href="../../src/user/dashboard.html">My Dashboard</a>
+      <button class="dropdown-btn">Dropdown
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+      <button class="dropdown-btn">help
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="../support/help.html">help</a>
+        <a href="#">FAQ</a>
+        <a href="#">contact</a>
+      </div>
+    </div>
+    <!-- Use any element to open the sidenav -->
+    <span onclick="openNav()"><button class="menu" onclick="this.classList.toggle();this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+      <svg width="64" height="64" viewBox="0 0 100 100">
+        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+        <path class="line line2" d="M 20,50 H 80" />
+        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+      </svg>
+    </button>
+  </span>
+  <input type="text"  class="search" placeholder="search.." >
+  <h1 class="header_h1">codescape</h1>
+ 
+        <button id="toggle-dark-mode" class="darkmode_button_icon"><svg  class="darkmode_svg"  xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></svg></button>
+        <button id="reset-to-system" class="darkmode_button">Reset to System Theme</button>
+      </div>
+    </header>
+
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+  <div id="main">
+    <h1 class="h1_text"> codescape</h1>
+    <section class="index_card_section">
+      <h1> welcome to our coding  tips help guide, find all the tips to improve your web development skills</h1>
+          <div class="project_band">
+            <div class="item-5">
+              <div class="project_card project_card_a">
+                <div class="blog_page_thumb" style="background-image: url(../assets/images/fantasy-g4dd9bb5f2_1280.jpg);"></div>
+                <article>
+                </article>
+              </div>
+            </div>
+            <div class="item-6">
+              <div class="project_card project_card_a">
+                <div class="thumb" style="background-image: url(../assets/images/abstract-g60de8acb8_1280.jpg);"></div>
+                <article>
+                </article>
+              </div>
+            </div>
+            <div class="item-7">
+              <div  class="project_card project_card_a">
+                <div class="thumb" style="background-image: url(../assets/images/fantasy-g4dd9bb5f2_1280.jpg);"></div>
+                <article>
+                </article>
+              </div>
+            </div>
+            <div class="item-7">
+              <div  class="project_card project_card_a">
+                <div class="blog_page_thumb" style="background-image: url(../assets/images/abstract-g60de8acb8_1280.jpg);"></div>
+                <article>
+                  </article>
+                </div>
+              </div>
+          </div>
+  </section>
+  <section class="index_card_section">
+    <h1> My latest Projects, i've been working on</h1>
+        <div class="project_band">
+          <div class="item-5">
+            <div class="project_card project_card_a">
+              <div class="blog_page_thumb" style="background-image: url(../assets/images/fantasy-g4dd9bb5f2_1280.jpg);"></div>
+              <article>
+              </article>
+            </div>
+          </div>
+          <div class="item-6">
+            <div class="project_card project_card_a">
+              <div class="thumb" style="background-image: url(../assets/images/abstract-g60de8acb8_1280.jpg);"></div>
+              <article>
+              </article>
+            </div>
+          </div>
+          <div class="item-7">
+            <div  class="project_card project_card_a">
+              <div class="thumb" style="background-image: url(../assets/images/fantasy-g4dd9bb5f2_1280.jpg);"></div>
+              <article>
+              </article>
+            </div>
+          </div>
+          <div class="item-7">
+              <div  class="project_card project_card_a">
+                <div class="blog_page_thumb" style="background-image: url(../assets/images/abstract-g60de8acb8_1280.jpg);"></div>
+                <article>
+                </article>
+              </div>
+            </div>
+        </div>
+</section>
+<footer> <div class="footer_display">
+  <div class="footer_logo">
+    <picture>
+      <source srcset="../../assets/images/codescape-logo-dark.png" media="(prefers-color-scheme: dark)">
+      <img src="../../assets/images/codescape-logo-light.png">
+    </picture>
+    </div>
+    <p class="desktop">copyright hannah 2023</p>
+  <a href="mailto:hannah@hannahcodes.co.uk">send me an email</a>
+  <a href="https://changelog.hannahcodes.co.uk/hannahcodes/changelog.html">view changelog</a>
+  <p class="mobile">copyright hannah 2023</p>
+</div>
+</footer>
+</body>
+<script src="../../assets/js/nav.js"></script>
+<script src="../../assets/js/renderer.js"></script>
+<script src="../../assets/js/preload.js"></script>
+</html>

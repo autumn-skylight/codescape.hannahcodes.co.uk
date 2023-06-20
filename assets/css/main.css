@@ -45,6 +45,9 @@ body {
   background-color: var(--light-body-bg-colour);
   font-family: "Poppins", sans-serif;
   max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 @media (prefers-color-scheme: dark) {
   body {
