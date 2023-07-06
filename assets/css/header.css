@@ -1,32 +1,33 @@
 :root {
   color-scheme: light dark;
   /*light mode colours*/
-  --light-header-bg-colour: #ecf1f1;
   --light-header-boxshadow-colour: rgb(20, 20, 20, 0.151);
-  --light-nav-text-colour: black;
   --light-hover-active-colour: #5c2246;
-  --light-hamburger-icon-colour: black;
-  --light-dropdown-bg-colour: #dadada;
-  --light_footer-bg-colour: #ecf1f1;
+  --light-hamburger-icon-colour: #f2f5f7;
   /*dark mode colours*/
-  --dark-header-bg-colour: #2a2c2c;
   --dark-header-boxshadow-colour: rgb(20, 20, 20, 0.151);
-  --dark-nav-text-colour: #f2f5f7;
   --dark-hover-active-colour: #f2c7e2;
   --dark-hamburger-icon-colour: #f2f5f7;
-  --dark-dropdown-bg-colour: #262626;
-  --dark-footer-bg-colour: #2a2c2c;
+  /*header colours*/
+  --header-text-colour: #f2f5f7;
+  --header-bg-colour: #342c6f;
+  --header-hover-text-colour: #f2c7e2;
+  --header-search-colour: #bcbec0;
+  --dropdown-bg-colour: #403881;
+  /*footer colours*/
+  --footer-text-colour: #f2f5f7;
+  --footer-bg-colour: #342c6f;
 }
 
 a {
-  color: var(--light-nav-text-colour);
+  color: var(--header-text-colour);
 }
 a:hover {
   color: var(--light-hover-active-colour);
 }
 @media (prefers-color-scheme: dark) {
   a {
-    color: var(--dark-nav-text-colour);
+    color: var(--header-text-colour);
   }
   a:hover {
     color: var(--dark-hover-active-colour);
@@ -34,7 +35,8 @@ a:hover {
 }
 
 header {
-  background-color: var(--light-header-bg-colour);
+  background-color: var(--header-bg-colour);
+  color: #f2f5f7;
   box-shadow: 5px 5px 5px var(--light-header-boxshadow-colour);
   padding: 0.7em;
   display: flex;
@@ -42,7 +44,7 @@ header {
 }
 @media (prefers-color-scheme: dark) {
   header {
-    background-color: var(--dark-header-bg-colour);
+    background-color: var(--header-bg-colour);
     box-shadow: 5px 5px 5px var(--dark-header-boxshadow-colour);
   }
 }
@@ -55,7 +57,7 @@ header {
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: var(--light-header-bg-colour);
+  background-color: var(--header-bg-colour);
   box-shadow: 5px 5px 5px var(--light-header-boxshadow-colour);
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
@@ -64,7 +66,7 @@ header {
 }
 @media (prefers-color-scheme: dark) {
   .sidenav {
-    background-color: var(--dark-header-bg-colour);
+    background-color: var(--header-bg-colour);
     box-shadow: 5px 5px 5px var(--dark-header-boxshadow-colour);
   }
 }
@@ -75,7 +77,7 @@ header {
   text-decoration: none;
   font-size: 25px;
   background-color: inherit;
-  color: var(--light-nav-text-colour);
+  color: var(--header-text-colour);
   display: block;
   transition: 0.3s;
   cursor: pointer;
@@ -83,18 +85,18 @@ header {
 }
 @media (prefers-color-scheme: dark) {
   .sidenav a, .dropdown-btn {
-    color: var(--dark-nav-text-colour);
+    color: var(--header-text-colour);
   }
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover, .dropdown-btn:hover {
-  color: var(--light-hover-active-colour);
+  color: var(--header-hover-text-colour);
   font-weight: bold;
 }
 @media (prefers-color-scheme: dark) {
   .sidenav a:hover, .dropdown-btn:hover {
-    color: var(--dark-hover-active-colour);
+    color: var(--header-hover-text-colour);
   }
 }
 
@@ -111,6 +113,12 @@ header {
 #main {
   transition: margin-left 0.5s;
   padding: 0;
+  margin: 0;
+}
+
+.fa-solid {
+  flex-direction: row;
+  display: block;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -180,13 +188,13 @@ header {
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
   display: none;
-  background-color: var(--light-dropdown-bg-colour);
+  background-color: var(--dropdown-bg-colour);
   padding: 8px 8px 8px 32px;
   width: 100%;
 }
 @media (prefers-color-scheme: dark) {
   .dropdown-container {
-    background-color: var(--dark-dropdown-bg-colour);
+    background-color: var(--dropdown-bg-colour);
   }
 }
 
@@ -214,6 +222,7 @@ header {
   cursor: pointer;
   -webkit-app-region: no-drag;
   background-color: inherit;
+  color: var(--header-text-colour);
 }
 
 /* Style the search box inside the navigation bar */
@@ -226,6 +235,7 @@ header {
   margin-left: 0.3em;
   margin-right: 0.5em;
   font-size: 17px;
+  background-color: var(--header-search-colour);
 }
 
 .darkmode_button_icon {
@@ -249,6 +259,7 @@ header {
   align-items: center;
   align-self: center;
   margin: auto;
+  fill: var(--header-text-colour);
 }
 
 .header_h1 {
@@ -257,17 +268,17 @@ header {
   padding-bottom: 0.25em;
   text-align: center;
   align-self: center;
-  color: var(--light-nav-text-colour);
+  color: var(--header-text-colour);
 }
 @media (prefers-color-scheme: dark) {
   .header_h1 {
-    color: var(--dark-nav-text-colour);
+    color: var(--header-text-colour);
   }
 }
 
 /*--------7:footer styling------------*/
 footer {
-  background-color: var(--light-footer-bg-colour);
+  background-color: var(--footer-bg-colour);
   padding-left: 0;
   padding-top: 1px;
   padding-bottom: 0;
@@ -278,12 +289,12 @@ footer {
   max-height: auto;
   margin-left: 0;
   bottom: 40px;
-  color: var(--footer-link-colour);
+  color: var(--footer-text-colour);
   /*Styling logo*/
 }
 @media screen and (max-width: 800px) {
   footer {
-    background-color: var(--light-footer-bg-colour);
+    background-color: var(--footer-bg-colour);
     display: grid;
     padding-left: auto;
     padding-top: 1px;
@@ -295,47 +306,34 @@ footer {
     margin-left: 0;
     bottom: 60px;
     margin-top: -1em;
-    color: var(--footer-link-colour);
+    color: var(--footer-text-colour);
   }
 }
 @media (prefers-color-scheme: dark) {
   footer {
-    background-color: var(--dark-footer-bg-colour);
-    color: var(--footer-link-colour);
+    background-color: var(--footer-bg-colour);
+    color: var(--footer-text-colour);
   }
 }
 @media screen and (prefers-color-scheme: dark) and (max-width: 800px) {
   footer {
-    background-color: var(--dark-footer-bg-colour);
-    color: var(--footer-link-colour);
+    background-color: var(--footer-bg-colour);
+    color: var(--footer-text-colour);
   }
 }
 footer h1 {
   font-weight: 700;
   text-align: center;
 }
-footer p.desktop {
+footer p {
   font-weight: 700;
   text-align: center;
+  padding: 1em;
 }
 @media screen and (max-width: 800px) {
-  footer p.desktop {
+  footer p {
     display: none;
     opacity: 0;
-  }
-}
-footer p.mobile {
-  font-weight: 700;
-  text-align: center;
-  opacity: 0;
-}
-@media screen and (max-width: 800px) {
-  footer p.mobile {
-    opacity: 1;
-    margin: auto;
-    padding: 1em;
-    margin-top: 1em;
-    margin-bottom: 1em;
   }
 }
 footer a {
@@ -345,7 +343,7 @@ footer a {
   padding-right: 0.2em;
   align-items: center;
   text-align: center;
-  color: var(--footer-link-colour);
+  color: var(--footer-text-colour);
 }
 @media screen and (max-width: 800px) {
   footer a {
@@ -362,18 +360,18 @@ footer .footer_display {
 @media screen and (max-width: 800px) {
   footer .footer_display {
     display: grid;
-    background-color: var(--light-footer-bg-colour);
+    background-color: var(--footer-bg-colour);
   }
 }
 @media (prefers-color-scheme: dark) {
   footer .footer_display {
-    background-color: var(--dark-footer-bg-colour);
+    background-color: var(--footer-bg-colour);
   }
 }
 @media screen and (prefers-color-scheme: dark) and (max-width: 800px) {
   footer .footer_display {
     display: grid;
-    background-color: var(--dark-footer-bg-colour);
+    background-color: var(--footer-bg-colour);
   }
 }
 footer .footer_logo {

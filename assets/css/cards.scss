@@ -102,7 +102,7 @@
       }
     }
   }
-  article {
+  .article_card {
     padding: 20px;
     flex: 1;
     display: flex;
@@ -265,13 +265,6 @@
     background-color: #1f1e1e;
     color: rgb(196, 195, 195);
   }
-}
-.modal-body h2{
-  margin-left: 1em;
-}
-.modal-body p{
-  margin-left: 2em;
-  margin-right: 4em;
 }
 .modal-footer {
   padding: 2px 16px;

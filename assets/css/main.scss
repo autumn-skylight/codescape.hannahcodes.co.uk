@@ -13,7 +13,6 @@
 
     --light-body-bg-colour: #f5f5f5;
     --light-hover-active-colour: #5c2246;
-    --light-nav-text-colour: black;
     --light-svg-fill-colour: black;
     --light-section-1-bg-colour: #ededf1;
     --light-sorce-code-svg-fill-colour: #5a5c5e;
@@ -45,7 +44,7 @@
       background-color: var(--light-body-bg-colour);
       font-family: 'Poppins', sans-serif;
       max-width: 100%;
-      min-height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
       @media (prefers-color-scheme: dark) {
@@ -53,6 +52,9 @@
       }
   }
 
+.main_article{
+    flex-grow: 1;
+}
 
   .projects_img{
     width: 100%;

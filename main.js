@@ -1,6 +1,8 @@
-const { app, BrowserWindow, ipcMain, nativeTheme } = require('electron')
+const { app, BrowserWindow, ipcMain, nativeTheme} = require('electron');
+const { setupTitlebar, attachTitlebarToWindow } = require('custom-electron-titlebar/main');
 const path = require('path')
 
+setupTitlebar();
 function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
@@ -9,13 +11,16 @@ function createWindow () {
     height: 1080,
     titleBarStyle: 'hidden',
     titleBarOverlay: {
-      color: 'rgb(42, 44, 44)',
-    symbolColor: '#ffff',
+      color: '#342c6f',
+     symbolColor: 'white',
     height: 60,
+    width: 100,
     },
+   frame: false,
   webPreferences: {
 nodeIntegration: true,
 contextIsolation: true,
+sandbox: false,
 devTools: true,
 preload: path.join(__dirname, './assets/js/preload.js')
   }  })
@@ -26,7 +31,6 @@ preload: path.join(__dirname, './assets/js/preload.js')
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
 }
-
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
