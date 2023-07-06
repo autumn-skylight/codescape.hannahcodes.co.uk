@@ -65,8 +65,8 @@ body {
 
 .h1_text {
   text-align: center;
-  padding-left: 1em;
-  padding-top: 0.5em;
+  padding-top: 1.5em;
+  margin: auto;
   font-size: 3em;
   z-index: 1;
   color: var(--light-nav-text-colour);

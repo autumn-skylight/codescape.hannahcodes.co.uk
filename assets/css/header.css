@@ -40,6 +40,9 @@ header {
   box-shadow: 5px 5px 5px var(--light-header-boxshadow-colour);
   padding: 0.7em;
   display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
   -webkit-app-region: drag;
 }
 @media (prefers-color-scheme: dark) {
