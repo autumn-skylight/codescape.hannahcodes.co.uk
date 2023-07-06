@@ -84,7 +84,7 @@ codescape is an all in one app for developers and designers, where users can sho
 
 ### Built using
 
-codescsape is built using the stable version of node.js (20.3.0) and electron.js (25.1.0)
+codescsape is built using the stable version of node.js (20.3.0) and electron.js (25.2.0)
 
 * [node.js](https://nodejs.org/en)
 * [electron.js](https://www.electronjs.org/)
