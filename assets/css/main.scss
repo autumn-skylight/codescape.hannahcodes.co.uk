@@ -64,6 +64,7 @@
   .h1_text{
     text-align: center;
     padding-top: 1.5em;
+    margin-bottom: 2em;
     margin: auto;
     font-size: 3em;
     z-index: 1;
@@ -72,7 +73,43 @@
     color: var(--dark-nav-text-colour);
     }
   }
-
+  .h1_help_text{
+    text-align: center;
+    padding-top: 3em;
+    margin-bottom: 2em;
+    margin: auto;
+    font-size: 3em;
+    z-index: 1;
+    color: var(--light-nav-text-colour);
+    @media (prefers-color-scheme: dark) {
+    color: var(--dark-nav-text-colour);
+    }
+  }
+  .h2_header_text{
+    text-align: center;
+    padding-top: 4em;
+    margin: auto;
+    font-size: 2em;
+    z-index: 1;
+    color: var(--light-nav-text-colour);
+    @media (prefers-color-scheme: dark) {
+    color: var(--dark-nav-text-colour);
+    }
+  }
+  .h2_text{
+    text-align: center;
+    padding-top: 2em;
+    margin: auto;
+    font-size: 2em;
+    z-index: 1;
+    color: var(--light-nav-text-colour);
+    @media (prefers-color-scheme: dark) {
+    color: var(--dark-nav-text-colour);
+    }
+  }
+  .help_text_p{
+    margin-right: 2.5em;
+  }
   @media screen and (max-width: 700px) {
     .h1_text{
       padding-left: 1em;
@@ -84,15 +121,8 @@
   
 
   
-  /*index.html project section*/
-.index_card_section {
-  background-color: var(--light-section-1-bg-colour);
-  padding-top: 0.7em;
-  padding-bottom: 0.7em;
-  @media (prefers-color-scheme: dark) {
-    background-color: var(--section-1-bg-colour);
-  }
-  h1 {
+ 
+  .h1_space {
     margin: auto;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -103,7 +133,7 @@
       color: var(--nav-text-colour);
     }
   }
-}
+
 
 .project-header-section-container {
 width: 100%;

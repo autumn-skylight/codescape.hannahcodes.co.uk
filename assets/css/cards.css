@@ -233,8 +233,15 @@ h1 {
 .close {
   color: black;
   float: right;
+  margin-left: 87%;
+  background-color: rgba(0, 0, 0, 0.3843137255);
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
   font-size: 28px;
   font-weight: bold;
+  position: fixed;
 }
 @media (prefers-color-scheme: dark) {
   .close {

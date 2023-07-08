@@ -15,7 +15,8 @@
     --header-text-colour: #f2f5f7;
     --header-bg-colour: #342c6f;
     --header-hover-text-colour: #f2c7e2;
-    --header-search-colour: #bcbec0;
+    --header-search-colour: #403881;
+    --header-hover-search-colour: #bcbec0;
     --dropdown-bg-colour: #403881;
 
      /*footer colours*/
@@ -24,6 +25,7 @@
 }
 a {
     color: var(--header-text-colour);
+    padding-left: 1em;
     &:hover {
       color: var(--light-hover-active-colour);
     }
@@ -71,7 +73,7 @@ header{
   
   /* The navigation menu links */
   .sidenav a, .dropdown-btn {
-    padding: 8px 8px 8px 32px;
+    padding: 25px 8px 0px 0px;
     text-decoration: none;
     font-size: 25px;
     background-color: inherit;
@@ -83,6 +85,13 @@ header{
     @media (prefers-color-scheme: dark) {
       color: var(--header-text-colour);
     }
+  }
+  .sidenav .mydash{
+    font-size: 20px;
+  }
+  .sidenav .active{
+    color: var(--header-hover-text-colour);
+    font-weight: bold;
   }
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover, .dropdown-btn:hover {
@@ -111,6 +120,7 @@ header{
   .fa-solid{
     flex-direction: row;
     display: block;
+    float: left;
   }
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
@@ -168,8 +178,9 @@ header{
 .dropdown-container {
   display: none;
   background-color: var(--dropdown-bg-colour);
-  padding: 8px 8px 8px 32px;
+  margin: auto;
   width: 100%;
+  text-align: center;
   @media (prefers-color-scheme: dark) {
     background-color: var(--dropdown-bg-colour);
   }
@@ -210,6 +221,10 @@ header{
   margin-right: .5em;
   font-size: 17px;
   background-color: var(--header-search-colour);
+}
+.search:hover{
+  background-color: var(---header-hover-search-colour);
+  color: black;
 }
   .darkmode_button_icon{
     padding-left: 1em;

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../assets/css/header.css">
     <link rel="stylesheet" href="../../assets/css/img.css">
     <link rel="stylesheet" href="../../assets/css/cards.css">
+    <link rel="stylesheet" href="../../assets/css/whatsnew.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <script src="https://kit.fontawesome.com/b462bf7f1d.js" crossorigin="anonymous"></script>
@@ -18,24 +19,23 @@
   <header> 
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="../index.html">home</a>
-        <a href="../../src/user/dashboard.html">My Dashboard</a>
-      <button class="dropdown-btn">codingtips
-        <i class="fa fa-caret-down"></i>
+      <a href="../index.html"><i class="fa-solid fa-house"></i> Home</a>
+      <a class="mydash" href="../../src/user/dashboard.html"><i class="fa-solid fa-table-columns"></i> My dashboard</a>
+      <button class="dropdown-btn"><i class="fa-solid fa-code"></i> coding tips
       </button>
       <div class="dropdown-container">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
+        <a href="../coding/codingtips.html">home</a>
+        <a href="#">html</a>
+        <a href="#">css</a>
       </div>
-      <button class="dropdown-btn">help
-        <i class="fa fa-caret-down"></i>
+      <button class="dropdown-btn active"><i class="fa-solid fa-question"></i> help
       </button>
       <div class="dropdown-container">
-        <a href="../support/help.html">help</a>
+        <a class="active" href="../support/help.html">help</a>
         <a href="../support/changelog/whatsnew.html">what's new</a>
         <a href="#">contact</a>
       </div>
+      <a href="../account/settings/settings.html"><i class="fa-solid fa-gear"></i> settings</a>
     </div>
     <!-- Use any element to open the sidenav -->
     <span onclick="openNav()"><button class="menu" onclick="this.classList.toggle();this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
@@ -57,14 +57,15 @@
   <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
   <div id="main">
     <h1 class="h1_text"> Help</h1>
-    <section class="index_card_section">
-      <h1> welcome to the help section, please contact us if your issues isn't listed.</h1>
+    <section class="whatsnew_section">
+      <h1 class="h1_space"> welcome to the help section, please contact us if your issues isn't listed.</h1>
+      <hr class="space">
           <div class="help_band">
             <div class="item-5">
               <div class="project_card project_card_a">
                 <div class="blog_page_thumb"  style="background-image: url(../../assets/images/uploading.jpg);"></div>
                 <article class="article_card">
-                  <a id="myBtn" class="card_text" href="../support/uploading.html">uploading</a>
+                  <a id="myBtn" class="card_text" href="../support/faq.html#uploading">uploading</a>
                 </article>
               </div>
             </div>
@@ -72,7 +73,7 @@
               <div class="project_card project_card_a">
                 <div class="thumb" style="background-image: url(../../assets/images/safety.jpg);"></div>
                 <article class="article_card">
-                  <a id="myBtn" class="card_text" href="../support/safety.html">safety</a>
+                  <a id="myBtn" class="card_text" href="../support/faq.html#safety">safety</a>
                 </article>
               </div>
             </div>
@@ -83,7 +84,7 @@
               <div class="project_card project_card_a">
                 <div class="blog_page_thumb" style="background-image: url(../../assets/images/account.jpg);"></div>
                 <article class="article_card">
-                  <a id="myBtn" class="card_text" href="../support/account.html">account</a>
+                  <a id="myBtn" class="card_text" href="../support/faq.html#account">account</a>
                 </article>
               </div>
             </div>
@@ -91,7 +92,7 @@
               <div class="project_card project_card_a">
                 <div class="thumb" style="background-image: url(../../assets/images/report.jpg);"></div>
                 <article  class="article_card">
-                  <a id="myBtn" class="card_text" href="../support/report.html">report</a>
+                  <a id="myBtn" class="card_text" href="../support/faq.html#report">report</a>
                 </article>
               </div>
             </div>
@@ -102,7 +103,7 @@
               <div class="project_card project_card_a">
                 <div class="blog_page_thumb" style="background-image: url(../../assets/images/sharing.jpg);"></div>
                 <article class="article_card">
-                  <a id="myBtn" class="card_text" href="../support/sharing.html">sharing</a>
+                  <a id="myBtn" class="card_text" href="../support/faq.html#sharing">sharing</a>
                 </article>
               </div>
             </div>
@@ -110,7 +111,7 @@
               <div class="project_card project_card_a">
                 <div class="thumb" style="background-image: url(../../assets/images/data.jpg);"></div>
                 <article class="article_card">
-                  <a id="myBtn" class="card_text" href="../support/data.html">data</a>
+                  <a id="myBtn" class="card_text" href="../support/faq.html#data">data</a>
                 </article>
               </div>
             </div>

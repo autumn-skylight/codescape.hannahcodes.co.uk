@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../../assets/css/header.css">
     <link rel="stylesheet" href="../../../assets/css/img.css">
     <link rel="stylesheet" href="../../../assets/css/cards.css">
+    <link rel="stylesheet" href="../../../assets/css/whatsnew.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <script src="https://kit.fontawesome.com/b462bf7f1d.js" crossorigin="anonymous"></script>
@@ -17,26 +18,25 @@
 <body>
   <header> 
     <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="../../index.html">home</a>
-        <a href="../../../src/user/dashboard.html">My Dashboard</a>
-      <button class="dropdown-btn">codingtips
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-container">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-      </div>
-      <button class="dropdown-btn">help
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-container">
-        <a href="../../support/help.html">help</a>
-        <a href="../../support/changelog/whatsnew.html">what's new</a>
-        <a href="#">contact</a>
-      </div>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="../../index.html"><i class="fa-solid fa-house"></i> Home</a>
+    <a class="mydash" href="../../../src/user/dashboard.html"><i class="fa-solid fa-table-columns"></i> My dashboard</a>
+    <button class="dropdown-btn"><i class="fa-solid fa-code"></i> coding tips
+    </button>
+    <div class="dropdown-container">
+      <a href="../../coding/codingtips.html">home</a>
+      <a href="#">html</a>
+      <a href="#">css</a>
     </div>
+    <button class="dropdown-btn"><i class="fa-solid fa-question"></i> help
+    </button>
+    <div class="dropdown-container">
+      <a href="../../support/help.html">help</a>
+      <a href="../../support/changelog/whatsnew.html">what's new</a>
+      <a href="#">contact</a>
+    </div>
+    <a class="active" href="../../account/settings/settings.html"><i class="fa-solid fa-gear"></i> settings</a>
+  </div>
     <!-- Use any element to open the sidenav -->
     <span onclick="openNav()"><button class="menu" onclick="this.classList.toggle();this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
       <svg width="64" height="64" viewBox="0 0 100 100">
@@ -56,68 +56,37 @@
 
   <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
   <div id="main">
-    <h1 class="h1_text"> Help</h1>
-    <section class="index_card_section">
-      <h1> welcome to the help section, please contact us if your issues isn't listed.</h1>
-          <div class="project_band">
-            <div class="item-5">
-              <div class="project_card project_card_a">
-                <div class="blog_page_thumb" style="background-image: url(../../assets/images/2765820.jpg);"></div>
-                <article>
-                  <h1>uploading</h1>
-                </article>
-              </div>
-            </div>
-            <div class="item-6">
-              <div class="project_card project_card_a">
-                <div class="thumb" style="background-image: url(../../assets/images/26644.jpg);"></div>
-                <article>
-                  <h1>safety</h1>
-                </article>
-              </div>
-            </div>
-          </div>
-          <br>
-          <div class="project_band">
-            <div class="item-5">
-              <div class="project_card project_card_a">
-                <div class="blog_page_thumb" style="background-image: url(../assets/images/fantasy-g4dd9bb5f2_1280.jpg);"></div>
-                <article>
-                </article>
-              </div>
-            </div>
-            <div class="item-6">
-              <div class="project_card project_card_a">
-                <div class="thumb" style="background-image: url(../assets/images/abstract-g60de8acb8_1280.jpg);"></div>
-                <article>
-                </article>
-              </div>
-            </div>
-          </div>
-          <br>
-          <div class="project_band">
-            <div class="item-5">
-              <div class="project_card project_card_a">
-                <div class="blog_page_thumb" style="background-image: url(../assets/images/fantasy-g4dd9bb5f2_1280.jpg);"></div>
-                <article>
-                </article>
-              </div>
-            </div>
-            <div class="item-6">
-              <div class="project_card project_card_a">
-                <div class="thumb" style="background-image: url(../assets/images/abstract-g60de8acb8_1280.jpg);"></div>
-                <article>
-                </article>
-              </div>
-            </div>
-          </div>
+    <h1 class="h1_text"> settings</h1>
+    <section class="whatsnew_section">
+      <h1>updated 06/07/2023.</h1>
+          <hr>
+          <h2> v1 <a href="#">#</a></h2>
+          <h3> added </h3>
+          <ul>
+              <li></li>
+          </ul>
+          <h3> changed </h3>
+          <ul>
+              <li></li>
+          </ul>
+          <hr class="test">
+          <h2> v1 <a
+                  href="#">#</a>
+          <h3> changed </h3>
+          <ul>
+            <li></li>
+          </ul>
+          <hr>
+          </ul>
+</div>
   </section>
   
+
+</body>
 <footer> <div class="footer_display">
-    <p>copyright codescape 2023</p>
+  <p>copyright codescape 2023</p>
 </div>
 </footer>
-</body>
 <script src="../../../assets/js/nav.js"></script>
 <script src="../../../assets/js/renderer.js"></script>
 <script src="../../../assets/js/preload.js"></script>

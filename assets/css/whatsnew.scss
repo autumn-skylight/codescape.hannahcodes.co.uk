@@ -3,6 +3,7 @@ hr {
   width: 97%;
   margin-left: 1em;
   margin-top: .6em;
+
   align-items: center;
   @media screen and (max-width: 800px){
     width: 90%;
@@ -38,4 +39,27 @@ hr {
   hr.test{
     border: .2px solid #4d3855;
     margin-top: .5em;
+  }
+  hr.space{
+    border: .2px solid #4d3855;
+    margin-top: .5em;
+    margin-bottom: 1em;
+  }
+  .whatsnew_section{
+    padding-top: 0.7em;
+    padding-bottom: 2em;
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+
+  .help_hr { 
+    border-top: 1px solid var(--top-border-colour); 
+  width: 97%;
+  margin-left: 1em;
+  margin-top: .6em;
+  padding-bottom: 1.25em;
+  align-items: center;
+  @media screen and (max-width: 800px){
+    width: 90%;
+  }
   }

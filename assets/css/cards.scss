@@ -216,8 +216,15 @@
 .close {
   color: black;
   float: right;
+  margin-left: 87%;
+  background-color: #00000062;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: .2em;
+  padding-bottom: .2em;
   font-size: 28px;
   font-weight: bold;
+  position: fixed;
   @media (prefers-color-scheme: dark) {
     color: white;
   }
