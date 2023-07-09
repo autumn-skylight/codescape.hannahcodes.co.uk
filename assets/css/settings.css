@@ -147,8 +147,24 @@ a:hover {
   padding-bottom: 1em;
   align-items: center;
   padding: auto;
+  text-decoration: none;
   float: right;
-  margin-left: 60%;
+  margin-left: 55%;
+  -webkit-app-region: no-drag;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+.check_update_button_2 {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  align-items: center;
+  padding: auto;
+  float: right;
+  margin-left: 0.5%;
+  text-decoration: none;
   -webkit-app-region: no-drag;
   cursor: pointer;
   background-color: inherit;
