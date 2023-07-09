@@ -14,3 +14,12 @@ document.getElementById('toggle-dark-mode').addEventListener('click', async () =
     await window.darkMode.system()
     document.getElementById('theme-source').innerHTML = 'System'
   })
+
+  let shell = require('electron').shell
+document.addEventListener('click', function (event) {
+  if (event.target.tagName === 'A' && event.target.href.startsWith('http')) {
+    event.preventDefault()
+    shell.openExternal(event.target.href)
+  }
+})
+window.open('https://github.com', '_blank', 'top=500,left=200,frame=false,nodeIntegration=no')

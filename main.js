@@ -75,4 +75,3 @@ ipcMain.handle('dark-mode:system', () => {
   nativeTheme.themeSource = 'system'
 })
 
-

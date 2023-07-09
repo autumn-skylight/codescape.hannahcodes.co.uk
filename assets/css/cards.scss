@@ -34,7 +34,19 @@
     --project-discription-colour: #b5b8bd;
   }
 
-
+  .card_a {
+    color: black;
+    padding-left: 1em;
+    &:hover {
+      color: var(--light-hover-active-colour);
+    }
+    @media (prefers-color-scheme: dark) {
+      color: var(--header-text-colour);
+      &:hover {
+        color: var(--dark-hover-active-colour);
+      }
+    }
+  }
 .project_band {
     width: 60%;
     max-width: 2000px;
@@ -51,7 +63,7 @@
     }
   }
   .help_band {
-    width: 40%;
+    width: 55%;
     height: 100%;
     max-width: 1500px;
     margin: auto;
@@ -66,7 +78,7 @@
       grid-template-columns: 1fr 1fr;
     }
     @media (min-width: 60em) {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
   }
   .project_card {
@@ -102,6 +114,72 @@
       }
     }
   }
+  .help_card {
+    background-color: inherit;
+    text-decoration: none;
+   /* box-shadow: 0 2px 5px var(--light-card-box-shadow-colour); */
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    min-width: 100%;
+    position: relative;
+    top: 0;
+    transition: all 0.1s ease-in;
+    &:hover {
+      top: -2px;
+      /* box-shadow: 0 4px 5px var(--light-card-box-shadow-hover-colour); */
+    }
+  
+    @media (prefers-color-scheme: dark) {
+      background-color: inherit;
+      text-decoration: none;
+      color: var(--nav-text-colour);
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      position: relative;
+      top: 0;
+      transition: all 0.1s ease-in;
+      &:hover {
+        top: -6px;
+      }
+    }
+  }
+
+  /* The Close Button */
+.close {
+  color: black;
+  float: right;
+  margin-left: 87%;
+  background-color: rgba(255, 254, 255, 0.589);
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  font-size: 28px;
+  font-weight: bold;
+  position: fixed;
+  @media (prefers-color-scheme: dark) {
+      background-color: rgba(0, 0, 0, 0.3843137255);
+      color: white;
+  }
+}
+
+
+
+.close:hover,
+.close:focus {
+  color: var(--light-hover-active-colour);
+  text-decoration: none;
+  cursor: pointer;
+}
+@media (prefers-color-scheme: dark) {
+  .close:hover,
+  .close:focus {
+    color: var(--dark-hover-active-colour);
+  }
+}
+
   .article_card {
     padding: 20px;
     flex: 1;
@@ -182,24 +260,6 @@
 
   }
 
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #ededf1;
-  color: #000;
-  margin: auto;
-  padding: 0;
-  box-shadow: 5px 5px 5px var(--light-modal-boxshadow-colour);
-  width: 100%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s;
-  @media (prefers-color-scheme: dark) {
-    box-shadow: 5px 5px 5px var(--dark-header-boxshadow-colour);
-  }
-}
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
@@ -210,76 +270,4 @@
 @keyframes animatetop {
   from {top:-300px; opacity:0}
   to {top:0; opacity:1}
-}
-
-/* The Close Button */
-.close {
-  color: black;
-  float: right;
-  margin-left: 87%;
-  background-color: #00000062;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: .2em;
-  padding-bottom: .2em;
-  font-size: 28px;
-  font-weight: bold;
-  position: fixed;
-  @media (prefers-color-scheme: dark) {
-    color: white;
-  }
-}
-
-.close:hover,
-.close:focus {
-  color: var(--light-hover-active-colour);
-  text-decoration: none;
-  cursor: pointer;
-  @media (prefers-color-scheme: dark) {
-    color: var(--dark-hover-active-colour);
-  }
-}
-
-.modal-header-top {
-  padding: 2px 16px;
-  background-color: #ecf1f1;
-  color: black;
-  text-align: center;
-  box-shadow: 8px 8px 8px 8px rgba(0,0,0,.75);
-  border-bottom: 1px solid #babbbb;
-  @media (prefers-color-scheme: dark) {
-    background-color: #2a2c2c;
-    color: white;
-  }
-}
-.modal-header {
-  padding: 2px 16px;
-  background-color: #ecf1f1;
-  color: black;
-  margin-left: 0;
-  text-align: center;
-  border-bottom: 1px solid #babbbb;
-  @media (prefers-color-scheme: dark) {
-    background-color: #2a2c2c;
-    color: white;
-  }
-}
-.modal-body {
-  padding: 2px 16px;
-  background-color: #ededf1;
-  color: black;
-  @media (prefers-color-scheme: dark) {
-    background-color: #1f1e1e;
-    color: rgb(196, 195, 195);
-  }
-}
-.modal-footer {
-  padding: 2px 16px;
-  background-color: #ecf1f1;
-  color: black;
-  border-top: .5px solid #babbbb;
-  @media (prefers-color-scheme: dark) {
-    background-color: #2a2c2c;
-    color: white;
-  }
 }
