@@ -121,6 +121,10 @@ body {
   }
 }
 
+.index_h2 {
+  font-size: 1em;
+}
+
 .help_text_p {
   margin-right: 2.5em;
 }
