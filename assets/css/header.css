@@ -39,7 +39,7 @@ header {
   background-color: var(--header-bg-colour);
   color: #f2f5f7;
   box-shadow: 5px 5px 5px var(--light-header-boxshadow-colour);
-  padding: 0.7em;
+  padding: 0.5em;
   display: flex;
   position: fixed;
   width: 100%;
@@ -79,7 +79,7 @@ header {
 .sidenav a, .dropdown-btn {
   padding: 25px 8px 0px 0px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   background-color: inherit;
   color: var(--header-text-colour);
   display: block;

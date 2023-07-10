@@ -71,7 +71,7 @@
     padding-bottom: .5em;
     padding: auto;
     float: right;
-    margin-left: 65%;
+    margin-left: 62%;
     -webkit-app-region: no-drag;
     cursor: pointer;
     background-color: inherit;
@@ -85,6 +85,8 @@
     align-items: center;
     padding: auto;
     float: right;
+    width: .25em;
+    height: .25em;
     margin-left: 61%;
     -webkit-app-region: no-drag;
     cursor: pointer;
@@ -100,6 +102,8 @@
     padding: auto;
     float: right;
     margin-left: 63%;
+    width: .25em;
+    height: .25em;
     -webkit-app-region: no-drag;
     cursor: pointer;
     background-color: inherit;
@@ -114,6 +118,8 @@
     padding: auto;
     float: right;
     margin-left: 58.5%;
+    width: .25em;
+    height: .25em;
     -webkit-app-region: no-drag;
     cursor: pointer;
     background-color: inherit;
@@ -127,6 +133,8 @@
     padding-bottom: .5em;
     padding: auto;
     float: right;
+    width: .25em;
+    height: .25em;
     margin-left: 57%;
     -webkit-app-region: no-drag;
     cursor: pointer;
@@ -175,8 +183,8 @@
   margin: auto;
   float: right;
   padding: auto;
-  width: 10em;
-  height: 3em;
+  width: 3.5em;
+  height: 3.5em;
   fill: var(--settings-light-links-text-colour);
   @media (prefers-color-scheme: dark) {
     fill: var(--settings-dark-links-text-colour);
