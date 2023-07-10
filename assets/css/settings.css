@@ -1,38 +1,36 @@
 :root {
   color-scheme: light dark;
-  /*light mode colours*/
-  --light-header-boxshadow-colour: rgb(20, 20, 20, 0.151);
-  --light-hover-active-colour: #5c2246;
-  --light-hamburger-icon-colour: #f2f5f7;
-  /*dark mode colours*/
-  --dark-header-boxshadow-colour: rgb(20, 20, 20, 0.151);
-  --dark-hover-active-colour: #f2c7e2;
-  --dark-hamburger-icon-colour: #f2f5f7;
-  /*header colours*/
-  --header-text-colour: #f2f5f7;
-  --header-bg-colour: #342c6f;
-  --header-hover-text-colour: #f2c7e2;
-  --header-search-colour: #403881;
-  --header-hover-search-colour: #bcbec0;
-  --dropdown-bg-colour: #403881;
-  /*footer colours*/
-  --footer-text-colour: #f2f5f7;
-  --footer-bg-colour: #342c6f;
+  /*settings colours*/
+  --settings-light-links-text-colour: black;
+  --settings-dark-links-text-colour: #f2f5f7;
+  --settings-light-hover-text-colour: #5c2246;
+  --settings-dark-hover-text-colour: #f2c7e2;
+  --settings-light-p-text-colour: rgb(59, 59, 59);
+  --settings-dark-p-text-colour: #8b8b8b;
+  --settings-light-modal-bg-colour: #f5f5f5;
+  --settings-dark-modal-bg-colour: #121212;
 }
 
-a {
-  color: black;
+.settings_a {
+  color: var(--settings-light-links-text-colour);
 }
-a:hover {
-  color: var(--light-hover-active-colour);
+.settings_a:hover {
+  color: var(--settings-light-hover-active-colour);
 }
 @media (prefers-color-scheme: dark) {
-  a {
-    color: var(--header-text-colour);
+  .settings_a {
+    color: var(--settings-dark-links-text-colour);
   }
-  a:hover {
-    color: var(--dark-hover-active-colour);
+  .settings_a:hover {
+    color: var(--settings-dark-hover-active-colour);
   }
+}
+
+.settings_section {
+  padding-top: 0.7em;
+  padding-bottom: 2em;
+  margin-left: 5em;
+  margin-right: 5em;
 }
 
 /* Optional: Style the caret down icon */
@@ -62,11 +60,11 @@ a:hover {
   cursor: pointer;
   -webkit-app-region: no-drag;
   background-color: inherit;
-  color: black;
+  color: var(--settings-light-links-text-colour);
 }
 @media (prefers-color-scheme: dark) {
   .darkmode_button {
-    color: var(--header-text-colour);
+    color: var(--settings-dark-links-text-colour);
   }
 }
 
@@ -185,11 +183,11 @@ a:hover {
   padding: auto;
   width: 10em;
   height: 3em;
-  fill: black;
+  fill: var(--settings-light-links-text-colour);
 }
 @media (prefers-color-scheme: dark) {
   .darkmode_svg {
-    fill: var(--header-text-colour);
+    fill: var(--settings-dark-links-text-colour);
   }
 }
 
@@ -228,4 +226,133 @@ hr.settings_space {
 .settings_h3, .settings_p {
   padding-top: 1em;
   padding-bottom: 1em;
+}
+
+.settings_p {
+  padding-left: 1em;
+  color: var(--settings-light-p-text-colour);
+}
+@media (prefers-color-scheme: dark) {
+  .settings_p {
+    color: var(--settings-dark-p-text-colour);
+  }
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.562); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal_content {
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.5333333333);
+  width: 50%; /* Could be more or less, depending on screen size */
+  background-color: var(--settings-light-modal-bg-colour);
+}
+@media (prefers-color-scheme: dark) {
+  .modal_content {
+    background-color: var(--settings-dark-modal-bg-colour);
+  }
+}
+
+/* The Close Button */
+.settings_close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.settings_close:hover,
+.settings_close:focus {
+  color: var(--settings-light-hover-text-colour);
+  text-decoration: none;
+  cursor: pointer;
+}
+@media (prefers-color-scheme: dark) {
+  .settings_close:hover,
+  .settings_close:focus {
+    color: var(--settings-dark-hover-text-colour);
+  }
+}
+
+/* Modal Header */
+.modal_header {
+  padding: 2px 16px;
+  text-align: center;
+  color: white;
+}
+
+/* Modal Body */
+.modal_body {
+  padding: 3em;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+.settings_modal_space_header {
+  border-top: 1px solid var(--top-border-colour);
+  margin-top: 0.6em;
+  width: 100%;
+  align-items: center;
+}
+
+h2, h3 {
+  padding-top: 0.7em;
+  font-size: 1em;
+}
+@media screen and (max-width: 800px) {
+  h2, h3 {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+.settings_changelog_h3, .settings_changelog_h2, .settings_changelog_h1 {
+  color: var(--nav-text-colour);
+  margin-left: 2em;
+}
+
+h3 {
+  color: var(--nav-text-colour);
+  padding-left: 1.75em;
+}
+
+.settings_chnagelog_li, .settings_changelog_ui {
+  margin-left: 8em;
+  margin-right: 1.5em;
+}
+
+@media screen and (max-width: 800px) {
+  p {
+    margin-right: 1.5em;
+    margin-left: 1em;
+  }
+}
+
+hr.settings_modal_space {
+  border: 0.2px solid #4d3855;
+  margin-top: 0.5em;
+  width: 100%;
+  margin-bottom: 1em;
 }/*# sourceMappingURL=settings.css.map */

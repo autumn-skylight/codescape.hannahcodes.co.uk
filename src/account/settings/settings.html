@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../../../assets/css/img.css">
     <link rel="stylesheet" href="../../../assets/css/cards.css">
     <link rel="stylesheet" href="../../../assets/css/settings.css">
-    <link rel="stylesheet" href="../../../assets/css/whatsnew.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <script src="https://kit.fontawesome.com/b462bf7f1d.js" crossorigin="anonymous"></script>
@@ -50,7 +49,7 @@
   <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
   <div id="main">
     <h1 class="h1_text"> settings</h1>
-    <section class="whatsnew_section">
+    <section class="settings_section">
       <h2 class="h2_header_text"> update details</h2> 
     </div>
       <hr class="settings_space">
@@ -103,9 +102,46 @@
         <h3 class="settings_h3">current version</h3>
         <p class="settings_p"> v0.0.1</p>      
         <a class="check_update_button" target="_blank" href="https://github.com/autumn-skylight/codescape-app/releases">check for updates</a>
-        <a class="check_update_button_2" href="../../../src/support/changelog/whatsnew.html">whats new</a>
+        <a class="check_update_button_2" id="myBtn">whatsnew</a>
     </div>
       <hr class="settings_space">
+
+       <!-- Trigger/Open The Modal -->
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal_content">
+    <div class="modal_header">
+      <span class="settings_close">&times;</span>
+      <h2>whats new</h2>
+    </div>
+    <div class="modal_body">
+      <h1 class="settings_changelog_h1">updated 06/07/2023.</h1>
+      <hr class="settings_modal_space_header">
+      <h2 class="settings_changelog_h2"> v1 <a href="#">#</a></h2>
+      <h3 class="settings_changelog_h3"> added </h3>
+      <ul class="settings_changelog_ui">
+          <li class="settings_changelog_li">testing changelog</li>
+      </ul>
+      <h3 class="settings_changelog_h3"> changed </h3>
+      <ul class="settings_changelog_ui">
+          <li class="settings_changelog_li"></li>
+      </ul>
+      <hr class="settings_modal_space">
+      <h2 class="settings_changelog_h2"> v1 <a
+              href="#">#</a>
+      <h3 class="settings_changelog_h3"> changed </h3>
+      <ul class="settings_changelog_ui">
+        <li class="settings_changelog_li"></li>
+      </ul>
+      <hr class="settings_modal_space">
+      </ul>
+    </div>
+  </div>
+
+</div> 
 </div>
   </section>
   

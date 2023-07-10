@@ -1,15 +1,4 @@
-hr { 
-    border-top: 1px solid var(--top-border-colour); 
-  width: 97%;
-  margin-left: 1em;
-  margin-top: .6em;
-
-  align-items: center;
-  @media screen and (max-width: 800px){
-    width: 90%;
-  }
-  }
-  h2, h3{
+h2, h3{
     padding-top: .7em;
     font-size: 1em;
     @media screen and (max-width: 800px){
@@ -17,17 +6,14 @@ hr {
       margin-right: 1em;
     }
   }
-  p,h2{
+  .help_h3, .help_h2, .help_p{
     color: var(--nav-text-colour);
-    padding-left: 1em;
+    margin-left: 2em;
+    margin-right: 4em;
   }
   h3 {
     color: var(--nav-text-colour);
     padding-left: 1.75em;
-  }
-  li{
-    margin-left: 3.5em;
-    margin-right: 1.5em;
   }
   p{
     @media screen and (max-width: 800px){
@@ -35,17 +21,14 @@ hr {
       margin-left: 1em;
     }
   }
-
-  hr.test{
+  hr.help_space{
     border: .2px solid #4d3855;
     margin-top: .5em;
-  }
-  hr.space{
-    border: .2px solid #4d3855;
-    margin-top: .5em;
+    width: 97%;
+  margin-left: 1em;
     margin-bottom: 1em;
   }
-  .whatsnew_section{
+  .faq_section{
     padding-top: 0.7em;
     padding-bottom: 2em;
     margin-left: 5em;
