@@ -93,6 +93,12 @@
     background-color: inherit;
     
   }
+  svg:hover{
+ fill:var(--settings-light-hover-text-colour);
+  @media (prefers-color-scheme: dark) {
+    fill: var(--settings-dark-hover-text-colour);
+  }
+}
   .edit_details_button_icon{
     padding-left: 1em;
     padding-right: 1em;
