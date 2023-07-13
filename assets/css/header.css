@@ -13,7 +13,7 @@
   --header-bg-colour: #141030;
   --header-hover-text-colour: #f2c7e2;
   --header-search-colour: #232135;
-  --header-hover-search-colour: #bcbec0;
+  --header-hover-search-colour: #232135;
   --dropdown-bg-colour: #232135;
   /*footer colours*/
   --footer-text-colour: #f2f5f7;
@@ -182,13 +182,11 @@ header {
 /* Optional: Style the caret down icon */
 .fa-caret-down {
   float: right;
-  background-color: inherit;
 }
 
 /* Optional: Style the caret down icon */
 .fa-caret-down .icon {
   float: right;
-  background-color: inherit;
   padding-left: 1em;
   padding-right: 1em;
   margin-left: 2em;
@@ -225,9 +223,9 @@ header {
   background-color: var(--header-search-colour);
 }
 
-.search:hover {
-  background-color: var(---header-hover-search-colour);
-  color: black;
+input .search:hover {
+  background-color: var(---header-search-colour);
+  color: white;
 }
 
 hr.settings_space {
