@@ -10,8 +10,8 @@
   :root {
     color-scheme: light dark;
     /*light mode colours*/
-
-    --light-body-bg-colour: #f5f5f5;
+    --light-body-ng-colour: #ffffff;
+    ---light-body-bg-colour: #f5f5f5;
     --light-hover-active-colour: #5c2246;
     --light-svg-fill-colour: black;
     --light-section-1-bg-colour: #ededf1;
@@ -63,7 +63,7 @@
 
   .h1_text{
     text-align: center;
-    padding-top: 1.5em;
+    padding-top: .75em;
     margin-bottom: 2em;
     margin: auto;
     font-size: 3em;

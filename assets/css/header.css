@@ -4,10 +4,14 @@
   --light-header-boxshadow-colour: rgb(20, 20, 20, 0.151);
   --light-hover-active-colour: #5c2246;
   --light-hamburger-icon-colour: #f2f5f7;
+  --light-topnav-bg-colour: #f3f2f1;
+  --settings-light-lang-colour: #5c5785;
   /*dark mode colours*/
   --dark-header-boxshadow-colour: rgb(20, 20, 20, 0.151);
   --dark-hover-active-colour: #f2c7e2;
   --dark-hamburger-icon-colour: #f2f5f7;
+  --dark-topnav-bg-colour: #252525;
+  --settings-dark-lang-colour: #232135;
   /*header colours*/
   --header-text-colour: #f2f5f7;
   --header-bg-colour: #141030;
@@ -38,8 +42,8 @@ a:hover {
 header {
   background-color: var(--header-bg-colour);
   color: #f2f5f7;
-  box-shadow: 5px 5px 5px var(--light-header-boxshadow-colour);
-  padding: 0.5em;
+  box-shadow: 0px 0px 0px var(--light-header-boxshadow-colour);
+  padding: 0.13em;
   display: flex;
   position: fixed;
   width: 100%;
@@ -49,7 +53,7 @@ header {
 @media (prefers-color-scheme: dark) {
   header {
     background-color: var(--header-bg-colour);
-    box-shadow: 5px 5px 5px var(--dark-header-boxshadow-colour);
+    box-shadow: 0px 0px 0px var(--dark-header-boxshadow-colour);
   }
 }
 
@@ -60,17 +64,19 @@ header {
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
-  left: 0;
-  background-color: var(--header-bg-colour);
+  right: 0;
+  background-color: var(--light-topnav-bg-colour);
   box-shadow: 5px 5px 5px var(--light-header-boxshadow-colour);
   overflow-x: hidden; /* Disable horizontal scroll */
+  margin-top: 6em; /* Place content 60px from the top */
   padding-top: 60px; /* Place content 60px from the top */
+  margin-left: 86.5%;
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   -webkit-app-region: no-drag;
 }
 @media (prefers-color-scheme: dark) {
   .sidenav {
-    background-color: var(--header-bg-colour);
+    background-color: var(--dark-topnav-bg-colour);
     box-shadow: 5px 5px 5px var(--dark-header-boxshadow-colour);
   }
 }
@@ -81,7 +87,7 @@ header {
   text-decoration: none;
   font-size: 20px;
   background-color: inherit;
-  color: var(--header-text-colour);
+  color: black;
   display: block;
   transition: 0.3s;
   cursor: pointer;
@@ -91,6 +97,13 @@ header {
   .sidenav a, .dropdown-btn {
     color: var(--header-text-colour);
   }
+}
+
+.sidenav .sidenav_text {
+  color: black;
+  margin: auto;
+  text-align: center;
+  margin-top: 1em;
 }
 
 .sidenav .mydash {
@@ -124,7 +137,7 @@ header {
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  transition: margin-left 0.5s;
+  transition: margin-right 0.5s;
   padding: 0;
   margin: 0;
 }
@@ -214,13 +227,15 @@ header {
 .search {
   padding: 0.5em;
   border: none;
-  border-radius: 1.5em;
+  border-radius: 0.75em;
   -webkit-app-region: no-drag;
-  margin-top: 0.1em;
-  margin-left: 0.3em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  float: right;
+  margin-right: 25em;
   margin-right: 0.5em;
   font-size: 17px;
-  background-color: var(--header-search-colour);
+  background-color: inherit;
 }
 
 input .search:hover {
@@ -372,8 +387,8 @@ footer .footer_logo img {
 .dropbtn_header {
   background-color: inherit;
   color: white;
-  margin-top: 0.45em;
-  padding: 0.5em;
+  margin-top: 0.5em;
+  padding: 0.25em;
   font-size: 16px;
   border: none;
   cursor: pointer;
@@ -426,5 +441,277 @@ footer .footer_logo img {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown_header:hover .dropbtn_header {
   color: var(--dark-hover-active-colour);
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: var(--light-topnav-bg-colour);
+  overflow: hidden;
+  margin-top: 2.5em;
+  position: fixed;
+  padding: 0.02em;
+  width: 100%;
+}
+@media (prefers-color-scheme: dark) {
+  .topnav {
+    background-color: var(--dark-topnav-bg-colour);
+  }
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: black;
+  text-align: center;
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+  margin-right: 0.5em;
+  padding: 13px 14px;
+  text-decoration: none;
+  font-size: 14px;
+}
+@media (prefers-color-scheme: dark) {
+  .topnav a {
+    color: var(--header-text-colour);
+  }
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  border-bottom: 2px solid var(--light-hover-active-colour);
+  color: black;
+}
+@media (prefers-color-scheme: dark) {
+  .topnav a:hover {
+    border-bottom: 2px solid var(--dark-hover-active-colour);
+    color: var(--header-text-colour);
+  }
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  border-bottom: 2px solid var(--light-hover-active-colour);
+  color: black;
+}
+@media (prefers-color-scheme: dark) {
+  .topnav a.active {
+    border-bottom: 2px solid var(--dark-hover-active-colour);
+    color: var(--header-text-colour);
+  }
+}
+
+.quick_settings_p,
+.h2_quick_settings_text,
+.h3_quick_settings_text,
+.h4_quick_settings_text {
+  color: black;
+}
+@media (prefers-color-scheme: dark) {
+  .quick_settings_p,
+  .h2_quick_settings_text,
+  .h3_quick_settings_text,
+  .h4_quick_settings_text {
+    color: var(--header-text-colour);
+  }
+}
+
+.quick_settings_p {
+  font-size: 1em;
+  margin-left: 1em;
+}
+
+.h2_quick_settings_text {
+  font-size: 1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
   font-weight: bold;
+}
+
+.h3_quick_settings_text {
+  font-size: 0.75em;
+  margin-left: 1.2em;
+  padding-top: 0.5em;
+}
+
+.h4_quick_settings_text {
+  font-size: 0.8em;
+  margin-left: 1em;
+}
+
+.quick_settings_darkmode_flex {
+  display: flex;
+  margin-left: 1em;
+  margin-top: 0.5em;
+}
+
+.qs_dm {
+  display: block;
+}
+@media (prefers-color-scheme: dark) {
+  .qs_dm {
+    display: none;
+  }
+}
+
+.qs_lm {
+  display: none;
+}
+@media (prefers-color-scheme: dark) {
+  .qs_lm {
+    display: block;
+  }
+}
+
+.qs_darkmode_button_icon {
+  padding-left: 1em;
+  padding-right: 1em;
+  align-items: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding: auto;
+  float: right;
+  margin-left: 35%;
+  -webkit-app-region: no-drag;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+.qs_darkmode_button_icon_2 {
+  padding-left: 1em;
+  padding-right: 1em;
+  align-items: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding: auto;
+  float: right;
+  margin-left: 15%;
+  -webkit-app-region: no-drag;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+.quick_settings_version_flex {
+  display: flex;
+  margin-left: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.quick_settings_version_p {
+  font-size: 1em;
+  margin-left: 2em;
+  margin-top: 1em;
+  color: black;
+}
+@media (prefers-color-scheme: dark) {
+  .quick_settings_version_p {
+    color: var(--footer-text-colour);
+  }
+}
+
+.qs_check_update_button {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  margin-top: -0.6em;
+  margin-left: 1em;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 0px;
+  border-bottom: 1px solid var(--light-hover-active-colour);
+}
+@media (prefers-color-scheme: dark) {
+  .qs_check_update_button {
+    color: var(--footer-text-colour);
+    border-bottom: 1px solid var(--dark-hover-active-colour);
+  }
+}
+
+.qs_check_update_button:hover {
+  color: var(--light-hover-active-colour);
+}
+@media (prefers-color-scheme: dark) {
+  .qs_check_update_button:hover {
+    color: var(--dark-header-hover-text-colour);
+  }
+}
+
+.qs_form_lang {
+  padding-left: 1em;
+  margin-right: 1em;
+  padding-right: 1em;
+  margin: auto;
+}
+
+.qs_form_lang select {
+  padding: 1em;
+  color: var(--settings-dark-links-text-colour);
+  background-color: var(--settings-light-lang-colour);
+}
+@media (prefers-color-scheme: dark) {
+  .qs_form_lang select {
+    color: var(--settings-dark-links-text-colour);
+    background-color: var(--settings-dark-lang-colour);
+  }
+}
+
+hr.quick_settings_space {
+  border: 0.2px solid #4d3855;
+  margin-top: 0.5em;
+  width: 85%;
+  margin-left: 1em;
+  padding-right: 1em;
+  margin-bottom: 1em;
+}
+@media (prefers-color-scheme: dark) {
+  hr.quick_settings_space {
+    border: 0.1px solid var(--header-hover-text-colour);
+  }
+}
+
+/* Style the links inside the pill navigation menu */
+.pill-nav a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  margin-top: 8em;
+  margin-left: 1em;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 0px;
+}
+@media (prefers-color-scheme: dark) {
+  .pill-nav a {
+    color: var(--footer-text-colour);
+  }
+}
+
+.pill-nav a:first-child {
+  margin-left: 5em;
+}
+
+/* Change the color of links on mouse-over */
+.pill-nav a:hover {
+  border-bottom: 2px solid var(--light-hover-active-colour);
+  color: black;
+}
+@media (prefers-color-scheme: dark) {
+  .pill-nav a:hover {
+    border-bottom: 2px solid var(--dark-hover-active-colour);
+    color: var(--footer-text-colour);
+  }
+}
+
+/* Add a color to the active/current link */
+.pill-nav a.active {
+  border-bottom: 2px solid var(--light-hover-active-colour);
+  color: black;
+}
+@media (prefers-color-scheme: dark) {
+  .pill-nav a.active {
+    border-bottom: 2px solid var(--dark-hover-active-colour);
+    color: var(--footer-text-colour);
+  }
 }/*# sourceMappingURL=header.css.map */

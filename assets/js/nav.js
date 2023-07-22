@@ -1,14 +1,14 @@
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
 function openNav() {
-    document.getElementById("mySidenav").style.width = "260px";
-    document.getElementById("main").style.marginLeft = "260px";
+    document.getElementById("mySidenav").style.width = "350px";
+    document.getElementById("main").style.marginRight = "0";
     document.body.style.backgroundColor = "";
   }
   
   /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
+    document.getElementById("main").style.marginRight = "0";
     document.body.style.backgroundColor = "inherit";
   }
   var dropdown = document.getElementsByClassName("dropdown-btn");
@@ -41,27 +41,55 @@ function openNav() {
   } 
 
   // Get the modal
-var modal = document.getElementById("myModal");
+//var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+//var btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("settings_close")[0];
+// span = document.getElementsByClassName("settings_close")[0];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+//btn.onclick = function() {
+ /// modal.style.display = "block";
+//}
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+//span.onclick = function() {
+ // modal.style.display = "none";
+//}
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+//window.onclick = function(event) {
+ // if (event.target == modal) {
+  //  modal.style.display = "none";
+  //}
+//} 
+
+var modals = document.getElementsByClassName("modal");
+var modalOpenBtn = document.getElementsByClassName("modalOpenBtn");
+var currentModal = null;
+
+// Function to open modal by id
+function openModal(id) {
+  for (i = 0; i < modals.length; i++) {
+    if (modals[i].getAttribute('id') == id) {
+      currentModal = modals[i];
+      currentModal.style.display = "block";
+      break;
+    }
   }
-} 
+}
+
+// When the user clicks the button, open modal with the same id
+modalOpenBtn.onclick = function() {
+  let currentID = modalOpenBtn.getAttribute('id');
+  openModal(currentID);
+}
+
+// When the user clicks anywhere outside of the modal or the X, close
+window.onclick = function(event) {
+  if (event.target == currentModal || event.target.getAttribute('class') == 'settings_close') {
+    currentModal.style.display = "none";
+  }
+}

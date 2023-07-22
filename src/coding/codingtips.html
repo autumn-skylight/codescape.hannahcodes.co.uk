@@ -17,23 +17,46 @@
 </head>
 <body>
   <header> 
-    <div id="mySidenav" class="sidenav">
+ <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="../index.html"><i class="fa-solid fa-house"></i> Home</a>
-      <a class="mydash" href="../../src/user/dashboard.html"><i class="fa-solid fa-table-columns"></i> My dashboard</a>
-      <button class="dropdown-btn"><i class="fa-solid fa-code active"></i> coding tips
-      </button>
-      <div class="dropdown-container">
-        <a class="active" href="../coding/codingtips.html">home</a>
-        <a href="#">html</a>
-        <a href="#">css</a>
-      </div>
-      <a href="../support/help.html"><i class="fa-solid fa-question"></i>help</a>
-      <a href="../account/settings/settings.html"><i class="fa-solid fa-gear"></i> settings</a>
+<h1 class="sidenav_text"> quick settings</h1>
+<hr class="quick_settings_space">
+      <h2 class="h2_quick_settings_text" id="change_apperance"> appearance</h2>
+      <div class="quick_settings_darkmode_flex">
+        <h3 class="h3_quick_settings_text qs_dm">set dark mode</h3>
+      <h3 class="h3_quick_settings_text qs_lm">set light mode</h3>
+      <button id="toggle-dark-mode" class="qs_darkmode_button_icon"><svg  class="qs_darkmode_svg"  xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></svg></button> 
+      
     </div>
-    <!-- Use any element to open the sidenav -->
-    <span onclick="openNav()"><i class="fa-solid fa-bars menu"></i></span>
-  <input type="text"  class="search" placeholder="search.." >
+      <div class="quick_settings_darkmode_flex">
+        <h3 class="h3_quick_settings_text">reset to system theme</h3>
+      <button id="reset-to-system" class="qs_darkmode_button_icon_2"><svg class="qs_darkmode_svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"/></svg></button> 
+      
+    </div>
+      <div class="quick_settings_darkmode_flex">
+        <h3 class="h3_quick_settings_text">change language (coming soon)</h3>
+<form name="lang" class="form_lang" id="form1" action="/action_page.php">
+  <select name="subject" id="subject">
+ <a class="check_update_button" target="_blank" href="https://github.com/autumn-skylight/codescape-app/releases">check for updates</a>
+    <option value="" selected="selected">english</option>
+    <option value="" >french (coming soon)</option>
+    <option value="">chinese (coming soon)</option>
+    <option value="" >spanish (coming soon)</option>
+  </select>
+</form>
+      
+    </div>
+      <hr class="quick_settings_space">
+       <h2 class="h2_quick_settings_text"> updates</h2>
+      <div class="quick_settings_version_flex">
+        <p class="quick_settings_version_p"> v0.0.1</p>
+        <a class="qs_check_update_button" target="_blank" href="https://github.com/autumn-skylight/codescape-app/releases">check for updates</a>
+      </div>
+
+<div class="pill-nav">
+<a class="active" href="../account/settings/settings.html">view all settings</a>
+</div> 
+    </div>
   <h1 class="header_h1">codescape</h1>
   <div class="dropdown_header">
     <button class="dropbtn_header">hello autumn_skylight</button>
@@ -45,9 +68,18 @@
   </div> 
       </div>
     </header>
-
+<div class="topnav">
+ <input type="text"  class="search" placeholder="search.." >
+<a href="../support/help.html"><i class="fa-solid fa-question"></i>help</a>
+      <a onclick="openNav()"><i class="fa-solid fa-gear"></i> settings</a>
+</div>
   <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
   <div id="main">
+<div class="pill-nav">
+  <a href="../index.html">Home</a>
+  <a href="../user/dashboard.html">My dashboard</a>
+  <a class="active" href="../coding/codingtips.html">coding examples</a>
+</div>
     <h1 class="h1_text"> codescape</h1>
     <section class="whatsnew_section">
       <h1 class="h1_space"> welcome to our coding  tips help guide, find all the tips to improve your web development skills</h1>

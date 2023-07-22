@@ -17,23 +17,6 @@
 </head>
 <body class="settings_body">
   <header> 
-    <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="../../index.html"><i class="fa-solid fa-house"></i> Home</a>
-    <a class="mydash" href="../../../src/user/dashboard.html"><i class="fa-solid fa-table-columns"></i> My dashboard</a>
-    <button class="dropdown-btn"><i class="fa-solid fa-code"></i> coding tips
-    </button>
-    <div class="dropdown-container">
-      <a href="../../coding/codingtips.html">home</a>
-      <a href="#">html</a>
-      <a href="#">css</a>
-    </div>
-    <a href="../../support/help.html"><i class="fa-solid fa-question"></i>help</a>
-    <a class="active" href="../../account/settings/settings.html"><i class="fa-solid fa-gear"></i> settings</a>
-  </div>
-    <!-- Use any element to open the sidenav -->
-    <span onclick="openNav()"><i class="fa-solid fa-bars menu"></i></span>
-  <input type="text"  class="search" placeholder="search.." >
   <h1 class="header_h1">codescape</h1>
   <div class="dropdown_header">
     <button class="dropbtn_header">hello autumn_skylight</button>
@@ -45,12 +28,23 @@
   </div> 
       </div>
     </header>
-
+<div class="topnav">
+ <input type="text"  class="search" placeholder="search.." >
+<a href="../../support/help.html"><i class="fa-solid fa-question"></i>help</a>
+    <a class="active" href="../../account/settings/settings.html"><i class="fa-solid fa-gear"></i> settings</a>
+</div>
   <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
   <div id="main">
+<div class="pill-nav">
+  <a href="../../index.html">Home</a>
+  <a class="active" href="../../account/settings/settings.html#update_details">update details</a>
+  <a href="../../account/settings/settings.html#change_apperance">change appearance</a>
+  <a href="../../account/settings/settings.html#version">version</a>
+  <a href="../../account/settings/settings.html#advanced">advanced</a>
+</div>
     <h1 class="h1_text"> settings</h1>
     <section class="settings_section">
-      <h2 class="h2_header_text"> update details</h2> 
+      <h2 class="h2_header_text" id="update_details"> update details</h2> 
     </div>
       <hr class="settings_space">
       <div class="darkmode_flex">
@@ -81,7 +75,7 @@
       
     </div>
       <hr class="settings_space">
-      <h2 class="h2_text"> appearance</h2>
+      <h2 class="h2_text" id="change_apperance"> appearance</h2>
       <hr class="settings_space">
       <div class="darkmode_flex">
         <h3 class="dm">set dark mode</h3>
@@ -95,14 +89,35 @@
       <button id="reset-to-system" class="darkmode_button_icon_2"><svg class="darkmode_svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"/></svg></button> 
       
     </div>
+     <hr class="settings_space">
+      <div class="darkmode_flex">
+        <h3 class="settings_h3">change language (coming soon)</h3>
+<form name="lang" class="form_lang" id="form1" action="/action_page.php">
+  <select name="subject" id="subject">
+ <a class="check_update_button" target="_blank" href="https://github.com/autumn-skylight/codescape-app/releases">check for updates</a>
+    <option value="" selected="selected">english</option>
+    <option value="" >french (coming soon)</option>
+    <option value="">chinese (coming soon)</option>
+    <option value="" >spanish (coming soon)</option>
+  </select>
+</form>
+      
+    </div>
       <hr class="settings_space">
-      <h2 class="h2_text"> version</h2>
+      <h2 class="h2_text" id="version"> version</h2>
       <hr class="settings_space">
       <div class="darkmode_flex">
         <h3 class="settings_h3">current version</h3>
         <p class="settings_p"> v0.0.1</p>      
         <a class="check_update_button" target="_blank" href="https://github.com/autumn-skylight/codescape-app/releases">check for updates</a>
-        <a class="check_update_button_2" id="myBtn">whatsnew</a>
+        <a class="check_update_button_2 modalOpenBtn" id="modalA" onclick="openModal('modalA')">whatsnew</a>
+    </div>
+      <hr class="settings_space">
+      <h2 class="h2_text" id="advanced"> advanced</h2>
+      <hr class="settings_space">
+      <div class="darkmode_flex">
+        <h3 class="settings_h3">delete my account</h3>     
+        <a class="check_update_button modalOpenBtn2"  id="modalB" onclick="openModal('modalB')">delete my account</a>
     </div>
       <hr class="settings_space">
 
@@ -110,7 +125,7 @@
 
 
 <!-- The Modal -->
-<div id="myModal" class="modal">
+<div id="modalA" class="modal">
   <!-- Modal content -->
   <div class="modal_content">
     <div class="modal_header">
@@ -141,6 +156,38 @@
     </div>
   </div>
 
+
+
+<div id="modalC" class="modal">
+  <!-- Modal content -->
+  <div class="modal_content">
+    <div class="modal_header">
+      <span class="settings_close">&times;</span>
+      <h2>delete my account</h2>
+    </div>
+    <div class="modal_body">
+      <h1 class="settings_changelog_h1">updated 06/07/2023.</h1>
+      <hr class="settings_modal_space_header">
+      <h2 class="settings_changelog_h2"> v1 <a href="#">#</a></h2>
+      <h3 class="settings_changelog_h3"> added </h3>
+      <ul class="settings_changelog_ui">
+          <li class="settings_changelog_li">testing changelog</li>
+      </ul>
+      <h3 class="settings_changelog_h3"> changed </h3>
+      <ul class="settings_changelog_ui">
+          <li class="settings_changelog_li"></li>
+      </ul>
+      <hr class="settings_modal_space">
+      <h2 class="settings_changelog_h2"> v1 <a
+              href="#">#</a>
+      <h3 class="settings_changelog_h3"> changed </h3>
+      <ul class="settings_changelog_ui">
+        <li class="settings_changelog_li"></li>
+      </ul>
+      <hr class="settings_modal_space">
+      </ul>
+    </div>
+  </div>
 </div> 
 </div>
   </section>

@@ -9,6 +9,8 @@
   --settings-dark-p-text-colour: #8b8b8b;
   --settings-light-modal-bg-colour: #f5f5f5;
   --settings-dark-modal-bg-colour: #121212;
+  --settings-light-lang-colour: #5c5785;
+  --settings-dark-lang-colour: #232135;
 }
 
 .settings_a {
@@ -252,6 +254,23 @@ hr.settings_space {
 @media (prefers-color-scheme: dark) {
   .settings_p {
     color: var(--settings-dark-p-text-colour);
+  }
+}
+
+.form_lang {
+  padding-left: 30em;
+  margin: auto;
+}
+
+.form_lang select {
+  padding: 1em;
+  color: var(--settings-dark-links-text-colour);
+  background-color: var(--settings-light-lang-colour);
+}
+@media (prefers-color-scheme: dark) {
+  .form_lang select {
+    color: var(--settings-dark-links-text-colour);
+    background-color: var(--settings-dark-lang-colour);
   }
 }
 
