@@ -211,6 +211,10 @@ h1 {
   }
 }
 
+.article_card span {
+  font-size: 0.7em;
+}
+
 .thumb {
   padding-bottom: 70%;
   min-height: 100%;
