@@ -26,7 +26,7 @@
     "electron": "^29.1.0"
   },
   "dependencies": {
-    "custom-electron-titlebar": "^4.2.7",
+    "custom-electron-titlebar": "^4.2.8",
     "electron-squirrel-startup": "^1.0.0"
   }
 }
